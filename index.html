@@ -279,6 +279,34 @@ body{font-family:'Hind',sans-serif;background:var(--bg);color:var(--txt);min-hei
 ::-webkit-scrollbar{width:3px;}
 ::-webkit-scrollbar-track{background:transparent;}
 ::-webkit-scrollbar-thumb{background:rgba(255,255,255,.07);border-radius:2px;}
+
+/* ── VISUAL STEP ── */
+.vis-step{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:.6rem;}
+.vis-step-hd{background:linear-gradient(135deg,rgba(163,113,247,.1),rgba(88,166,255,.06));padding:.65rem .95rem;display:flex;align-items:center;gap:.6rem;border-bottom:1px solid var(--border);}
+.vis-step-lbl{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--purple);}
+.vis-fig{font-size:.62rem;color:var(--sub);margin-left:auto;background:rgba(88,166,255,.1);border:1px solid rgba(88,166,255,.2);padding:.12rem .45rem;border-radius:6px;}
+.vis-svg-wrap{padding:.8rem;background:rgba(0,0,0,.25);}
+.vis-svg-wrap svg{width:100%;max-width:420px;display:block;margin:0 auto;}
+.vis-expl{padding:.8rem .95rem;font-size:.83rem;line-height:1.68;color:var(--sub);border-top:1px solid var(--border);}
+.vis-expl strong{color:var(--txt);}
+.vis-insight{background:linear-gradient(135deg,rgba(63,185,80,.07),rgba(88,166,255,.04));border-top:1px solid rgba(63,185,80,.15);padding:.7rem .95rem;font-size:.8rem;line-height:1.6;color:var(--green);}
+/* Case switcher inside visual */
+.vis-cases{display:flex;gap:.45rem;padding:.7rem .95rem .4rem;flex-wrap:wrap;}
+.vis-case-btn{background:rgba(255,255,255,.05);border:2px solid var(--border);color:var(--sub);padding:.32rem .7rem;border-radius:20px;font-size:.72rem;font-weight:700;cursor:pointer;font-family:'Hind',sans-serif;transition:all .2s;}
+.vis-case-btn.on{background:rgba(163,113,247,.1);border-color:var(--purple);color:var(--purple);}
+.vis-case-btn.gold{background:rgba(240,180,41,.1);border-color:var(--gold);color:var(--gold);}
+/* Range slider */
+.vis-range{padding:.5rem .95rem .2rem;display:flex;flex-direction:column;gap:.25rem;}
+.vis-range-lbl{font-size:.7rem;color:var(--sub);font-weight:600;display:flex;justify-content:space-between;}
+input[type=range]{width:100%;accent-color:var(--purple);}
+/* Table inside visual */
+.vis-tbl{padding:.5rem .95rem .8rem;overflow-x:auto;}
+.vis-tbl table{width:100%;border-collapse:collapse;font-size:.78rem;}
+.vis-tbl th{background:rgba(163,113,247,.1);color:var(--purple);font-weight:700;padding:.4rem .6rem;text-align:center;}
+.vis-tbl td{padding:.38rem .6rem;text-align:center;border-bottom:1px solid var(--border);}
+.vis-tbl td.z{color:var(--green);font-weight:700;}
+@keyframes zpulse{0%,100%{opacity:1;}50%{opacity:.35;}}
+.zpulse{animation:zpulse 1.5s ease-in-out infinite;}
 </style>
 </head>
 <body>
@@ -792,10 +820,14 @@ function renderStep() {
     h += `<div class="rem-b"><div class="r-h">🧠 Yaad Rakhna</div><div class="r-list">`;
     (s.points || []).forEach(p => { h += `<div class="r-item"><div class="r-dot">✓</div><div>${fmt(p)}</div></div>`; });
     h += `</div></div>`;
+  } else if(s.type === 'visual') {
+    h += renderVisualStep(s);
   }
 
   body.innerHTML = h;
   body.scrollTop = 0;
+  // Init interactive visuals after DOM update
+  if(s.type === 'visual') initVisual(s.visualId);
 }
 
 function fmt(t) {
@@ -807,6 +839,278 @@ function fmt(t) {
     .replace(/❌/g, '<span style="color:var(--red);">❌</span>')
     .replace(/•/g, '<span style="color:var(--blue);">•</span>')
     .replace(/\n/g, '<br>');
+}
+
+// ════════════════════════════════════════════════
+//  VISUAL STEP RENDERER
+// ════════════════════════════════════════════════
+function renderVisualStep(s) {
+  const vId = s.visualId;
+  const templates = {
+
+    'linear-graph': () => `
+      <div class="vis-step">
+        <div class="vis-step-hd"><span>📈</span><span class="vis-step-lbl">Interactive Graph</span><span class="vis-fig">Fig 2.1</span></div>
+        <div class="vis-range">
+          <div class="vis-range-lbl"><span>Slope (a): <strong id="vsl-a">2</strong></span><span>Intercept (b): <strong id="vsl-b">3</strong></span></div>
+          <input type="range" min="-4" max="4" value="2" step="0.5" oninput="visLinearUpdate()">
+          <input type="range" min="-6" max="6" value="3" step="0.5" oninput="visLinearUpdate()" id="vsl-b-range">
+        </div>
+        <div class="vis-svg-wrap">
+          <svg id="vsvg-linear" viewBox="0 0 320 260" xmlns="http://www.w3.org/2000/svg">
+            <g id="vlin-grid" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"></g>
+            <line id="vlin-xax" x1="20" y1="130" x2="300" y2="130" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+            <line id="vlin-yax" x1="160" y1="10" x2="160" y2="250" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+            <line id="vlin-line" x1="20" y1="50" x2="300" y2="210" stroke="#FF6B35" stroke-width="2.5" stroke-linecap="round"/>
+            <circle id="vlin-zero" cx="120" cy="130" r="6" fill="none" stroke="#3FB950" stroke-width="2.5" class="zpulse"/>
+            <circle id="vlin-zerodot" cx="120" cy="130" r="3.5" fill="#3FB950"/>
+            <text id="vlin-zerolbl" x="120" y="118" fill="#3FB950" font-size="10" font-family="Hind" text-anchor="middle" font-weight="bold">Zero</text>
+            <text id="vlin-eq" x="200" y="50" fill="#FF6B35" font-size="11" font-family="Hind" font-weight="bold">y = 2x+3</text>
+            <text x="305" y="133" fill="rgba(255,255,255,.3)" font-size="9" font-family="Hind">x</text>
+            <text x="163" y="8" fill="rgba(255,255,255,.3)" font-size="9" font-family="Hind">y</text>
+          </svg>
+        </div>
+        <div class="vis-expl" id="vlin-info">y = 2x + 3 | Zero = −b/a = −3/2 = <strong>−1.5</strong></div>
+        <div class="vis-insight">✅ <strong>Rule:</strong> Linear polynomial → exactly <strong>1 zero</strong> — jahan line x-axis ko kaate!</div>
+      </div>`,
+
+    'parabola-table': () => `
+      <div class="vis-step">
+        <div class="vis-step-hd"><span>🪸</span><span class="vis-step-lbl">Parabola + Table</span><span class="vis-fig">Fig 2.2</span></div>
+        <div class="vis-svg-wrap">
+          <svg id="vsvg-para" viewBox="0 0 320 280" xmlns="http://www.w3.org/2000/svg">
+            <line x1="20" y1="150" x2="300" y2="150" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+            <line x1="160" y1="10" x2="160" y2="270" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+            <g stroke="rgba(255,255,255,0.04)" stroke-width="0.5">
+              <line x1="20" y1="110" x2="300" y2="110"/><line x1="20" y1="70" x2="300" y2="70"/>
+              <line x1="20" y1="190" x2="300" y2="190"/><line x1="20" y1="230" x2="300" y2="230"/>
+              <line x1="120" y1="10" x2="120" y2="270"/><line x1="80" y1="10" x2="80" y2="270"/>
+              <line x1="200" y1="10" x2="200" y2="270"/><line x1="240" y1="10" x2="240" y2="270"/>
+            </g>
+            <path id="vpara-path" fill="none" stroke="#A371F7" stroke-width="2.5" stroke-linecap="round"/>
+            <g id="vpara-pts"></g>
+            <text x="238" y="143" fill="#3FB950" font-size="9.5" font-family="Hind" font-weight="bold">A(4,0)</text>
+            <text x="62" y="143" fill="#3FB950" font-size="9.5" font-family="Hind" font-weight="bold">A'(−1,0)</text>
+            <text x="165" y="28" fill="#A371F7" font-size="10" font-family="Hind" font-weight="bold">y=x²−3x−4</text>
+            <text x="305" y="153" fill="rgba(255,255,255,.3)" font-size="9" font-family="Hind">x</text>
+          </svg>
+        </div>
+        <div class="vis-tbl">
+          <table>
+            <tr><th>x</th><th>−2</th><th>−1</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+            <tr><td>y</td><td>6</td><td class="z">0 ✓</td><td>−4</td><td>−6</td><td>−6</td><td>−4</td><td class="z">0 ✓</td><td>6</td></tr>
+          </table>
+        </div>
+        <div class="vis-expl">Graph dekhkar points A'(−1, 0) aur A(4, 0) x-axis par hain — <strong>yahi zeroes hain!</strong></div>
+        <div class="vis-insight">🎯 <strong>Key Insight:</strong> Jahan y = 0, wahan x-axis par point hai — woh x-value hi zero hai polynomial ka!</div>
+      </div>`,
+
+    'three-cases': () => `
+      <div class="vis-step">
+        <div class="vis-step-hd"><span>📊</span><span class="vis-step-lbl">Parabola ke 3 Cases</span><span class="vis-fig">Fig 2.3 / 2.4 / 2.5</span></div>
+        <div class="vis-cases">
+          <button class="vis-case-btn on" id="vcase-btn-1" onclick="visShowCase(1)">✅ Case 1 — 2 Zeroes</button>
+          <button class="vis-case-btn" id="vcase-btn-2" onclick="visShowCase(2)">🟡 Case 2 — 1 Zero</button>
+          <button class="vis-case-btn" id="vcase-btn-3" onclick="visShowCase(3)">❌ Case 3 — 0 Zeroes</button>
+        </div>
+        <div class="vis-svg-wrap">
+          <svg id="vsvg-cases" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+            <line x1="15" y1="120" x2="305" y2="120" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+            <line x1="160" y1="8" x2="160" y2="232" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+            <g stroke="rgba(255,255,255,0.04)" stroke-width="0.5">
+              <line x1="15" y1="80" x2="305" y2="80"/><line x1="15" y1="40" x2="305" y2="40"/>
+              <line x1="15" y1="160" x2="305" y2="160"/><line x1="15" y1="200" x2="305" y2="200"/>
+              <line x1="120" y1="8" x2="120" y2="232"/><line x1="80" y1="8" x2="80" y2="232"/>
+              <line x1="200" y1="8" x2="200" y2="232"/><line x1="240" y1="8" x2="240" y2="232"/>
+            </g>
+            <path id="vcase-path" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+            <g id="vcase-zeros"></g>
+            <text id="vcase-eq" x="175" y="22" font-size="10" font-family="Hind" font-weight="bold" fill="#3FB950">y = x²+x−2</text>
+          </svg>
+        </div>
+        <div class="vis-expl" id="vcase-expl">Parabola x-axis ko 2 alag points par kaatti hai → 2 distinct zeroes!</div>
+        <div class="vis-insight" id="vcase-insight">🎯 D = b²−4ac &gt; 0 → 2 real zeroes milte hain</div>
+      </div>`,
+
+    'cubic-graph': () => `
+      <div class="vis-step">
+        <div class="vis-step-hd"><span>〰️</span><span class="vis-step-lbl">Cubic Polynomial Graph</span><span class="vis-fig">Fig 2.6</span></div>
+        <div class="vis-svg-wrap">
+          <svg id="vsvg-cubic" viewBox="0 0 320 280" xmlns="http://www.w3.org/2000/svg">
+            <line x1="15" y1="140" x2="305" y2="140" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+            <line x1="160" y1="8" x2="160" y2="272" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+            <g stroke="rgba(255,255,255,0.04)" stroke-width="0.5">
+              <line x1="15" y1="100" x2="305" y2="100"/><line x1="15" y1="60" x2="305" y2="60"/>
+              <line x1="15" y1="180" x2="305" y2="180"/><line x1="15" y1="220" x2="305" y2="220"/>
+              <line x1="110" y1="8" x2="110" y2="272"/><line x1="60" y1="8" x2="60" y2="272"/>
+              <line x1="210" y1="8" x2="210" y2="272"/><line x1="260" y1="8" x2="260" y2="272"/>
+            </g>
+            <path id="vcubic-path" fill="none" stroke="#58A6FF" stroke-width="2.5" stroke-linecap="round"/>
+            <g id="vcubic-zeros"></g>
+            <text x="175" y="22" fill="#58A6FF" font-size="10" font-family="Hind" font-weight="bold">y = x³ − 4x</text>
+          </svg>
+        </div>
+        <div class="vis-tbl">
+          <table>
+            <tr><th>x</th><th>−2</th><th>−1</th><th>0</th><th>1</th><th>2</th></tr>
+            <tr><td>y</td><td class="z">0 ✓</td><td>3</td><td class="z">0 ✓</td><td>−3</td><td class="z">0 ✓</td></tr>
+          </table>
+        </div>
+        <div class="vis-expl">Cubic curve <strong>3 baar x-axis ko kaatti hai</strong> → 3 zeroes: −2, 0, aur 2!</div>
+        <div class="vis-insight">🎯 Degree 3 → atmost 3 zeroes. Degree n → atmost n zeroes — <strong>general rule!</strong></div>
+      </div>`
+  };
+
+  const fn = templates[vId];
+  if(!fn) return `<div class="concept-b"><div class="b-h">📌 Visual</div><div class="b-body">Visual "${vId}" not found.</div></div>`;
+
+  return `<div class="l-badge" style="background:rgba(163,113,247,.12);color:var(--purple);">VISUAL</div>
+          <div class="l-h">${s.title}</div>
+          <div style="font-size:.84rem;color:var(--sub);margin-bottom:.75rem;line-height:1.6;">${s.intro || ''}</div>
+          ${fn()}`;
+}
+
+function initVisual(vId) {
+  if(vId === 'linear-graph') { visLinearUpdate(); }
+  else if(vId === 'parabola-table') { visDrawParabola(); }
+  else if(vId === 'three-cases') { visShowCase(1); }
+  else if(vId === 'cubic-graph') { visDrawCubic(); }
+}
+
+// ── Linear graph updater ──
+function visLinearUpdate() {
+  const aEl = document.querySelector('#vsvg-linear ~ * input, .vis-range input');
+  const inputs = document.querySelectorAll('.vis-range input[type=range]');
+  if(!inputs.length) return;
+  const a = parseFloat(inputs[0].value);
+  const b = parseFloat(inputs[1] ? inputs[1].value : 3);
+  document.getElementById('vsl-a') && (document.getElementById('vsl-a').textContent = a);
+  document.getElementById('vsl-b') && (document.getElementById('vsl-b').textContent = b);
+
+  // SVG coords: x in [-4,4] maps to px [20,300], y in [-8,8] maps to py [250,10]
+  const px = x => 20 + (x + 4) * 35;
+  const py = y => 130 - y * 15;
+
+  const y1 = a * (-4) + b, y2 = a * 4 + b;
+  const line = document.getElementById('vlin-line');
+  if(line) { line.setAttribute('x1', px(-4)); line.setAttribute('y1', py(y1)); line.setAttribute('x2', px(4)); line.setAttribute('y2', py(y2)); }
+
+  const zero = a !== 0 ? -b / a : null;
+  const zCirc = document.getElementById('vlin-zero');
+  const zDot = document.getElementById('vlin-zerodot');
+  const zLbl = document.getElementById('vlin-zerolbl');
+  if(zero !== null && zero >= -4 && zero <= 4) {
+    const zx = px(zero), zy = py(0);
+    [zCirc, zDot].forEach(el => { if(el){el.setAttribute('cx', zx); el.setAttribute('cy', zy);}});
+    if(zLbl){zLbl.setAttribute('x', zx); zLbl.setAttribute('y', zy - 12); zLbl.textContent = `(${Math.round(zero*100)/100}, 0)`;}
+  }
+
+  const eq = document.getElementById('vlin-eq');
+  if(eq) eq.textContent = `y = ${a}x ${b>=0?'+':''}${b}`;
+  const info = document.getElementById('vlin-info');
+  if(info) info.innerHTML = `y = ${a}x + ${b} &nbsp;|&nbsp; Zero = −b/a = <strong>${zero !== null ? Math.round(zero*100)/100 : '∞ (a=0!)'}</strong>`;
+}
+
+// ── Parabola drawer ──
+function visDrawParabola() {
+  const svg = document.getElementById('vpara-path');
+  if(!svg) return;
+  const ox=160, oy=150, sx=40, sy=20;
+  const pts = [];
+  for(let x=-2.5; x<=5.5; x+=0.12) {
+    const y = x*x - 3*x - 4;
+    const px = ox + x*sx, py2 = oy - y*sy;
+    if(py2 > 5 && py2 < 275) pts.push(`${pts.length===0?'M':'L'}${px.toFixed(1)},${py2.toFixed(1)}`);
+  }
+  svg.setAttribute('d', pts.join(' '));
+
+  const g = document.getElementById('vpara-pts');
+  if(!g) return;
+  g.innerHTML = '';
+  [[-1,0],[4,0]].forEach(([x,y]) => {
+    const px2 = ox + x*sx, py3 = oy - y*sy;
+    const ns = 'http://www.w3.org/2000/svg';
+    const c1 = document.createElementNS(ns,'circle');
+    c1.setAttribute('cx',px2); c1.setAttribute('cy',py3); c1.setAttribute('r','7');
+    c1.setAttribute('fill','none'); c1.setAttribute('stroke','#3FB950'); c1.setAttribute('stroke-width','2.5'); c1.setAttribute('class','zpulse');
+    g.appendChild(c1);
+    const c2 = document.createElementNS(ns,'circle');
+    c2.setAttribute('cx',px2); c2.setAttribute('cy',py3); c2.setAttribute('r','4'); c2.setAttribute('fill','#3FB950');
+    g.appendChild(c2);
+  });
+}
+
+// ── Three cases ──
+function visShowCase(n) {
+  [1,2,3].forEach(i => {
+    const b = document.getElementById(`vcase-btn-${i}`);
+    if(b) b.className = 'vis-case-btn' + (i===n ? (n===3?' gold':' on') : '');
+  });
+  const path = document.getElementById('vcase-path');
+  const zeros = document.getElementById('vcase-zeros');
+  const eqLbl = document.getElementById('vcase-eq');
+  const expl = document.getElementById('vcase-expl');
+  const ins = document.getElementById('vcase-insight');
+  if(!path) return;
+  zeros.innerHTML = '';
+
+  const ox=160, oy=120, sx=40, sy=22;
+  const toSvg = (x,y) => ({px: ox+x*sx, py: oy-y*sy});
+  const ns = 'http://www.w3.org/2000/svg';
+  let fn, color, eq, explT, insT;
+
+  if(n===1){fn=x=>x*x+x-2; color='#3FB950'; eq='y = x²+x−2 (zeroes: −2, 1)'; explT='Parabola x-axis ko <strong>2 alag points</strong> par kaatti hai → 2 distinct zeroes!'; insT='🎯 <strong>D > 0</strong> → 2 unequal real roots. Zeroes = x-coordinates of A aur A\'';}
+  else if(n===2){fn=x=>(x-1)*(x-1); color='#F0B429'; eq='y = (x−1)² (zero: 1, repeated)'; explT='Parabola x-axis ko <strong>sirf touch</strong> karta hai (tangent) → 2 equal zeroes!'; insT='🎯 <strong>D = 0</strong> → equal roots. α = β = −b/2a. Vertex x-axis par!';}
+  else{fn=x=>x*x+2*x+3; color='#F85149'; eq='y = x²+2x+3 (no real zeroes)'; explT='Parabola x-axis ko <strong>kabhi nahi kaatta</strong> → 0 real zeroes!'; insT='🎯 <strong>D < 0</strong> → No real roots. Roots imaginary hain!';}
+
+  const pts = [];
+  for(let x=-4;x<=4;x+=0.12){
+    const y=fn(x); const{px,py}=toSvg(x,y);
+    if(py>8&&py<232)pts.push(`${pts.length===0?'M':'L'}${px.toFixed(1)},${py.toFixed(1)}`);
+  }
+  path.setAttribute('d',pts.join(' ')); path.setAttribute('stroke',color);
+  if(eqLbl){eqLbl.textContent=eq; eqLbl.setAttribute('fill',color);}
+  if(expl) expl.innerHTML=explT;
+  if(ins) ins.innerHTML=insT;
+
+  if(n===1){
+    [[-2,0],[1,0]].forEach(([x,y])=>{
+      const{px,py}=toSvg(x,y);
+      const c=document.createElementNS(ns,'circle'); c.setAttribute('cx',px);c.setAttribute('cy',py);c.setAttribute('r','7');c.setAttribute('fill','none');c.setAttribute('stroke','#3FB950');c.setAttribute('stroke-width','2.5');c.setAttribute('class','zpulse');zeros.appendChild(c);
+      const c2=document.createElementNS(ns,'circle');c2.setAttribute('cx',px);c2.setAttribute('cy',py);c2.setAttribute('r','3.5');c2.setAttribute('fill','#3FB950');zeros.appendChild(c2);
+      const t=document.createElementNS(ns,'text');t.setAttribute('x',px);t.setAttribute('y',py-12);t.setAttribute('fill','#3FB950');t.setAttribute('font-size','9');t.setAttribute('font-family','Hind');t.setAttribute('text-anchor','middle');t.setAttribute('font-weight','bold');t.textContent=`(${x},0)`;zeros.appendChild(t);
+    });
+  } else if(n===2){
+    const{px,py}=toSvg(1,0);
+    const c=document.createElementNS(ns,'circle');c.setAttribute('cx',px);c.setAttribute('cy',py);c.setAttribute('r','8');c.setAttribute('fill','none');c.setAttribute('stroke','#F0B429');c.setAttribute('stroke-width','2.5');zeros.appendChild(c);
+    const c2=document.createElementNS(ns,'circle');c2.setAttribute('cx',px);c2.setAttribute('cy',py);c2.setAttribute('r','4');c2.setAttribute('fill','#F0B429');zeros.appendChild(c2);
+    const t=document.createElementNS(ns,'text');t.setAttribute('x',px);t.setAttribute('y',py-13);t.setAttribute('fill','#F0B429');t.setAttribute('font-size','9.5');t.setAttribute('font-family','Hind');t.setAttribute('text-anchor','middle');t.setAttribute('font-weight','bold');t.textContent='(1,0) — repeated';zeros.appendChild(t);
+  } else {
+    const t=document.createElementNS(ns,'text');t.setAttribute('x','160');t.setAttribute('y','18');t.setAttribute('fill','#F85149');t.setAttribute('font-size','9.5');t.setAttribute('font-family','Hind');t.setAttribute('text-anchor','middle');t.setAttribute('font-weight','bold');t.textContent='✕ x-axis par koi zero nahi!';zeros.appendChild(t);
+  }
+}
+
+// ── Cubic graph ──
+function visDrawCubic() {
+  const path = document.getElementById('vcubic-path');
+  const zg = document.getElementById('vcubic-zeros');
+  if(!path) return;
+  const ox=160,oy=140,sx=50,sy=35;
+  const pts=[];
+  for(let x=-2.8;x<=2.8;x+=0.1){
+    const y=x*x*x-4*x; const px=ox+x*sx,py=oy-y*sy;
+    if(py>8&&py<272) pts.push(`${pts.length===0?'M':'L'}${px.toFixed(1)},${py.toFixed(1)}`);
+  }
+  path.setAttribute('d',pts.join(' '));
+  if(!zg) return;
+  zg.innerHTML='';
+  const ns='http://www.w3.org/2000/svg';
+  [[-2,0],[0,0],[2,0]].forEach(([x,y],i)=>{
+    const px=ox+x*sx,py=oy-y*sy;
+    const c=document.createElementNS(ns,'circle');c.setAttribute('cx',px);c.setAttribute('cy',py);c.setAttribute('r','7');c.setAttribute('fill','none');c.setAttribute('stroke','#58A6FF');c.setAttribute('stroke-width','2');c.setAttribute('class','zpulse');zg.appendChild(c);
+    const c2=document.createElementNS(ns,'circle');c2.setAttribute('cx',px);c2.setAttribute('cy',py);c2.setAttribute('r','4');c2.setAttribute('fill','#58A6FF');zg.appendChild(c2);
+    const t=document.createElementNS(ns,'text');t.setAttribute('x',px);t.setAttribute('y',py+(i===1?14:-11));t.setAttribute('fill','#58A6FF');t.setAttribute('font-size','9');t.setAttribute('font-family','Hind');t.setAttribute('text-anchor','middle');t.setAttribute('font-weight','bold');t.textContent=`(${x},0)`;zg.appendChild(t);
+  });
 }
 
 function toggleAns(id) {

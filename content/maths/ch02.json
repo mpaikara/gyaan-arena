@@ -1,0 +1,410 @@
+{
+  "subject": "maths",
+  "chapterId": "ch02",
+  "chapterNum": 2,
+  "name": "Polynomials",
+  "emoji": "📊",
+  "color": "#A371F7",
+  "intro": "Is chapter mein hum polynomials ke zeroes ka geometrical meaning samjhenge — y = p(x) ka graph x-axis ko kahan kaatta hai. Phir quadratic aur cubic polynomial ke zeroes aur coefficients ke beech ka relationship dekhenge. Yeh formulas board mein zaroor aate hain!",
+
+  "topics": [
+    {
+      "id": "t1",
+      "name": "Polynomials — Types aur Zeroes",
+      "desc": "Linear, quadratic, cubic pehchano. Zero kya hota hai?",
+      "icon": "📚",
+      "xp": 20,
+      "difficulty": "easy",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Raju Ki Pocket Money Formula! 💰",
+          "body": "Raju ke papa ka formula: 'Tere marks ka square ÷ 10 minus 5 rupaye'\n\nAgar marks = x ho toh pocket money = x²/10 – 5\n\nYeh ek QUADRATIC POLYNOMIAL hai — degree 2 mein!\n\nMaths mein aisa expression jisme variable ki sirf positive integer powers hon — woh POLYNOMIAL hai. Degree = sabse badi power."
+        },
+        {
+          "type": "concept",
+          "title": "Polynomial ke Types — Degree se Pehchano",
+          "body": "**Degree 1 → LINEAR Polynomial**\nGeneral form: ax + b (a ≠ 0)\nExamples: 2x – 3, √3x + 5, y + √2, u/3 – 1\n\n**Degree 2 → QUADRATIC Polynomial**\nGeneral form: ax² + bx + c (a ≠ 0)\nExamples: 2x² + 3x – 2/5, y² – 2, 2 – x + √2x²\n\n**Degree 3 → CUBIC Polynomial**\nGeneral form: ax³ + bx² + cx + d (a ≠ 0)\nExamples: 2 – x³, x³, 3x³ – 2x² + x – 1\n\n❌ POLYNOMIAL NAHI hain:\n• 1/(x+1) — variable denominator mein\n• √x + 2 — fractional power\n• x⁻² + 3 — negative power"
+        },
+        {
+          "type": "formula",
+          "title": "Zero of a Polynomial",
+          "formula": "p(k) = 0  ⟺  k ek zero hai",
+          "note": "Real number k ek zero hai agar p(k) = 0 ho.\n\nExample: p(x) = x² – 3x – 4\np(–1) = (–1)² – 3(–1) – 4 = 1 + 3 – 4 = 0  ✅\np(4) = 16 – 12 – 4 = 0  ✅\nIsliye –1 aur 4 dono zeroes hain!\n\nLinear polynomial ax + b ka zero:\np(k) = 0 → ak + b = 0 → k = –b/a"
+        },
+        {
+          "type": "example",
+          "title": "Zero of p(x) = 2x + 3",
+          "question": "p(x) = 2x + 3 ka zero nikalo.",
+          "steps": [
+            { "num": "1", "text": "p(k) = 0 rakhte hain: 2k + 3 = 0" },
+            { "num": "2", "text": "2k = –3  →  k = –3/2" },
+            { "num": "3", "text": "Zero = –3/2 ✅  (formula: –b/a = –3/2)" }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "p(x) = x² – 3x – 4 ke zeroes check karo",
+          "question": "Check karo ki –1 aur 4 polynomial p(x) = x² – 3x – 4 ke zeroes hain.",
+          "steps": [
+            { "num": "1", "text": "p(–1) = (–1)² – 3(–1) – 4 = 1 + 3 – 4 = 0  ✅ Zero hai!" },
+            { "num": "2", "text": "p(4) = (4)² – 3(4) – 4 = 16 – 12 – 4 = 0  ✅ Zero hai!" },
+            { "num": "3", "text": "Dono –1 aur 4 zeroes hain." }
+          ]
+        },
+        {
+          "type": "practice",
+          "title": "Practice Karo!",
+          "questions": [
+            {
+              "question": "p(x) = x² + 7x + 10 ke zeroes check karo: x = –2 aur x = –5",
+              "answer": "p(–2) = 4 – 14 + 10 = 0 ✅. p(–5) = 25 – 35 + 10 = 0 ✅. Dono zeroes hain!"
+            },
+            {
+              "question": "Linear polynomial 3x – 5 ka zero nikalo",
+              "answer": "3x – 5 = 0 → x = 5/3. Formula: –b/a = –(–5)/3 = 5/3 ✅"
+            },
+            {
+              "question": "4s² – 4s + 1 ke zeroes nikalo (factorisation se)",
+              "answer": "4s² – 4s + 1 = (2s – 1)² = 0 → s = 1/2. Ek hi zero hai (repeated): 1/2"
+            }
+          ]
+        },
+        {
+          "type": "remember",
+          "title": "Key Points — Yaad Rakhna! 🧠",
+          "points": [
+            "Zero = woh real number k jahan p(k) = 0",
+            "Linear polynomial ax + b ka zero = –b/a",
+            "Degree n ka polynomial → atmost n zeroes",
+            "Quadratic → atmost 2 zeroes, Cubic → atmost 3 zeroes",
+            "Polynomial nahi: 1/x, √x, x⁻² (invalid powers)"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "t2",
+      "name": "Geometrical Meaning of Zeroes",
+      "desc": "Graph aur x-axis — parabola ke 3 cases",
+      "icon": "📈",
+      "xp": 25,
+      "difficulty": "easy",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Graph Ki Kahani — Zeroes Dikhte Hain! 🎯",
+          "body": "Jab hum y = p(x) ka graph draw karte hain — jahan bhi yeh curve x-axis ko KAATTA hai (yahan y = 0 hota hai) — wahan ka x-value ek ZERO hai!\n\nLinear y = ax + b → Ek seedhi line → Exactly 1 zero\nQuadratic y = ax² + bx + c → Parabola (U shape ya ∩ shape) → 0, 1, ya 2 zeroes\nCubic y = ax³ + bx² + cx + d → S-shaped curve → atmost 3 zeroes\n\nYeh NCERT ka sabse important geometrical connection hai!"
+        },
+        {
+          "type": "concept",
+          "title": "Linear Polynomial — Straight Line",
+          "body": "y = ax + b (a ≠ 0) → STRAIGHT LINE\n\nLine exactly EK point par x-axis se milti hai: (–b/a, 0)\n\nExample: y = 2x + 3\n• x = –2 par y = –1, x = 2 par y = 7\n• Graph point (–3/2, 0) par x-axis kaatta hai\n• Zero = –3/2 = –b/a ✅\n\n**Rule: Linear polynomial mein EXACTLY 1 zero hota hai!**"
+        },
+        {
+          "type": "concept",
+          "title": "Quadratic Polynomial — Parabola ke 3 Cases",
+          "body": "y = ax² + bx + c → PARABOLA\n• a > 0 → ∪ shape (upward)\n• a < 0 → ∩ shape (downward)\n\n**Case 1:** Parabola x-axis ko 2 distinct points A, A' par kaate\n→ 2 DISTINCT zeroes (x-coordinates of A aur A')\n\n**Case 2:** Parabola x-axis ko exactly 1 point par chhuye (tangent)\n→ 2 EQUAL zeroes (ek hi zero, repeated)\n\n**Case 3:** Parabola x-axis ko KABHI nahi kaate\n→ NO real zeroes\n\n**Rule: Quadratic mein ATMOST 2 zeroes!**"
+        },
+        {
+          "type": "example",
+          "title": "NCERT Example: y = x² – 3x – 4 ka Table",
+          "question": "y = x² – 3x – 4 ke liye x = –2, –1, 0, 1, 2, 3, 4, 5 par values nikalo.",
+          "steps": [
+            { "num": "1", "text": "x=–2: 4+6–4=6 | x=–1: 1+3–4=0 ✅ | x=0: –4 | x=1: –6" },
+            { "num": "2", "text": "x=2: –6 | x=3: –4 | x=4: 16–12–4=0 ✅ | x=5: 6" },
+            { "num": "3", "text": "Zero at x=–1 aur x=4 → Graph x-axis ko in 2 points par kaatta hai" },
+            { "num": "4", "text": "a=1 > 0 → ∪ shape parabola. Case 1 (2 distinct zeroes) ✅" }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Cubic Polynomial — S-Shaped Curve",
+          "body": "y = x³ – 4x ke liye table:\nx = –2, –1, 0, 1, 2\ny = 0, 3, 0, –3, 0\n\nZeroes: –2, 0, 2 (3 distinct zeroes)\nGraph x-axis ko 3 points par kaatta hai!\n\n**y = x³** → Sirf ek zero: x = 0\n**y = x³ – x²** = x²(x–1) → Zeroes: 0 (repeated) aur 1\n\n**General Rule: Polynomial of degree n → atmost n zeroes**"
+        },
+        {
+          "type": "practice",
+          "title": "Graph Se Zeroes Count Karo",
+          "questions": [
+            {
+              "question": "Ek parabola x-axis ko sirf touch kare (tangent) — kitne zeroes hain?",
+              "answer": "1 zero (repeated). Case 2 hai. Dono zeroes equal hain. Ek hi value leti hai."
+            },
+            {
+              "question": "Ek curve (cubic) x-axis ko 3 points par kaate — minimum degree kya ho sakta hai?",
+              "answer": "Minimum degree 3 (cubic polynomial). Degree n → atmost n zeroes. 3 zeroes ke liye degree ≥ 3."
+            },
+            {
+              "question": "Parabola completely x-axis ke upar hai — zeroes kitne hain?",
+              "answer": "0 zeroes! Case 3. No real roots. D = b² – 4ac < 0 hoga."
+            }
+          ]
+        },
+        {
+          "type": "remember",
+          "title": "Geometrical Meaning Summary 🎯",
+          "points": [
+            "Zeroes = x-coordinates of points jahan graph x-axis kaatta hai",
+            "Linear → straight line → exactly 1 zero",
+            "Quadratic → parabola → 0, 1, or 2 zeroes (3 cases!)",
+            "Cubic → at most 3 zeroes",
+            "Degree n → at most n zeroes (general rule)"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "t3",
+      "name": "Zeroes aur Coefficients ka Relationship",
+      "desc": "α+β = –b/a aur αβ = c/a — NCERT ka most important result!",
+      "icon": "🧮",
+      "xp": 35,
+      "difficulty": "medium",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Zeroes Aur Coefficients Ka Secret Connection! 🔗",
+          "body": "NCERT ne ek magical connection dhundha — quadratic polynomial ke zeroes aur uske coefficients directly related hote hain!\n\np(x) = 2x² – 8x + 6 ke zeroes 1 aur 3 hain.\nZeroes ka sum = 1 + 3 = 4 = –(–8)/2 = –b/a ✅\nZeroes ka product = 1 × 3 = 3 = 6/2 = c/a ✅\n\nYeh coincidence nahi — hamesha yahi hota hai!"
+        },
+        {
+          "type": "formula",
+          "title": "Quadratic Polynomial ke Zeroes ke Formulas",
+          "formula": "α + β = –b/a     |     αβ = c/a",
+          "note": "p(x) = ax² + bx + c ke zeroes α aur β hain:\n\nSum of zeroes:\nα + β = –b/a = –(coefficient of x) / (coefficient of x²)\n\nProduct of zeroes:\nα × β = c/a = constant term / coefficient of x²\n\nDerivation:\nax² + bx + c = k(x–α)(x–β) = k[x² – (α+β)x + αβ]\nCompare: b = –k(α+β), c = kαβ, a = k\n→ α+β = –b/a, αβ = c/a ✅"
+        },
+        {
+          "type": "example",
+          "title": "NCERT Example 2: x² + 7x + 10 ke zeroes",
+          "question": "x² + 7x + 10 ke zeroes nikalo aur relationship verify karo.",
+          "steps": [
+            { "num": "1", "text": "Factorize: x² + 7x + 10 = (x + 2)(x + 5)" },
+            { "num": "2", "text": "Zeroes: x = –2 aur x = –5" },
+            { "num": "3", "text": "Sum check: –2 + (–5) = –7 = –(7)/1 = –b/a ✅" },
+            { "num": "4", "text": "Product check: (–2)(–5) = 10 = 10/1 = c/a ✅" },
+            { "num": "5", "text": "Relationship verified!" }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "NCERT Example 3: x² – 3 ke zeroes",
+          "question": "x² – 3 ke zeroes nikalo aur relationship verify karo.",
+          "steps": [
+            { "num": "1", "text": "x² – 3 = (x – √3)(x + √3)  [identity: a² – b² = (a–b)(a+b)]" },
+            { "num": "2", "text": "Zeroes: x = √3 aur x = –√3" },
+            { "num": "3", "text": "Sum: √3 + (–√3) = 0 = –(0)/1 = –b/a ✅  (b=0 here!)" },
+            { "num": "4", "text": "Product: √3 × (–√3) = –3 = (–3)/1 = c/a ✅" }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "NCERT Example 4: Quadratic Polynomial Banao",
+          "question": "Ek quadratic polynomial banao jiske zeroes ka sum –3 aur product 2 ho.",
+          "steps": [
+            { "num": "1", "text": "α + β = –3 = –b/a → b/a = 3" },
+            { "num": "2", "text": "αβ = 2 = c/a" },
+            { "num": "3", "text": "a = 1 lo: b = 3, c = 2" },
+            { "num": "4", "text": "Polynomial: x² + 3x + 2 ✅" },
+            { "num": "5", "text": "Verify: (x+1)(x+2) → zeroes –1, –2. Sum = –3 ✅, Product = 2 ✅" }
+          ]
+        },
+        {
+          "type": "formula",
+          "title": "Cubic Polynomial ke Zeroes ke Relations",
+          "formula": "α+β+γ = –b/a  |  αβ+βγ+γα = c/a  |  αβγ = –d/a",
+          "note": "p(x) = ax³ + bx² + cx + d ke zeroes α, β, γ hain:\n\nSum: α + β + γ = –b/a\nSum of products (pairs): αβ + βγ + γα = c/a\nProduct: αβγ = –d/a\n\nNCERT Example 5: p(x) = 2x³ – 5x² – 14x + 8\nZeroes: 4, –2, 1/2\nSum = 4+(–2)+1/2 = 5/2 = –(–5)/2 = –b/a ✅\nProduct = 4×(–2)×(1/2) = –4 = –8/2 = –d/a ✅"
+        },
+        {
+          "type": "example",
+          "title": "NCERT Example 5 (Cubic Verification)",
+          "question": "Verify karo ki 3, –1, –1/3 polynomial p(x) = 3x³ – 5x² – 11x – 3 ke zeroes hain.",
+          "steps": [
+            { "num": "1", "text": "p(3) = 3(27) – 5(9) – 11(3) – 3 = 81 – 45 – 33 – 3 = 0 ✅" },
+            { "num": "2", "text": "p(–1) = 3(–1) – 5(1) – 11(–1) – 3 = –3 – 5 + 11 – 3 = 0 ✅" },
+            { "num": "3", "text": "p(–1/3) = 3(–1/27) – 5(1/9) – 11(–1/3) – 3 = –1/9 – 5/9 + 11/3 – 3 = 0 ✅" },
+            { "num": "4", "text": "Sum = 3+(–1)+(–1/3) = 5/3 = –(–5)/3 = –b/a ✅" },
+            { "num": "5", "text": "Product = 3×(–1)×(–1/3) = 1 = –(–3)/3 = –d/a ✅" }
+          ]
+        },
+        {
+          "type": "practice",
+          "title": "NCERT Exercise 2.2 — Practice",
+          "questions": [
+            {
+              "question": "x² – 2x – 8 ke zeroes nikalo aur verify karo",
+              "answer": "(x–4)(x+2)=0. Zeroes: 4, –2. Sum=2=–(–2)/1 ✅. Product=–8=(–8)/1 ✅"
+            },
+            {
+              "question": "6x² – 3 – 7x ke zeroes nikalo",
+              "answer": "6x²–7x–3 = (3x+1)(2x–3) = 0. Zeroes: –1/3, 3/2. Sum = –1/3+3/2 = 7/6 = 7/6 ✅"
+            },
+            {
+              "question": "Sum = 1/4, Product = –1 wala quadratic polynomial banao",
+              "answer": "x² – (sum)x + product = x² – (1/4)x – 1 = 0. Multiply by 4: 4x² – x – 4"
+            },
+            {
+              "question": "Sum = √2, Product = 1/3 wala polynomial banao",
+              "answer": "x² – √2x + 1/3 ya 3x² – 3√2x + 1"
+            }
+          ]
+        },
+        {
+          "type": "remember",
+          "title": "Board Exam ke Important Formulas! 🏆",
+          "points": [
+            "Quadratic ax²+bx+c: α+β = –b/a (sum), αβ = c/a (product)",
+            "Polynomial banana: x² – (α+β)x + αβ = 0",
+            "Cubic: α+β+γ = –b/a | αβγ = –d/a",
+            "Verify karna: calculate karo aur formula se match karo",
+            "a=1 le sakte ho polynomial banate waqt — simpler hota hai"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "quizSets": [
+    {
+      "setId": "setA",
+      "name": "Set A — Basic",
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "p(x) = x² – 3x – 4 mein p(–1) kya hai?",
+          "options": ["0", "6", "–6", "4"],
+          "correctIndex": 0,
+          "hint": "(–1)² – 3(–1) – 4 = 1 + 3 – 4 calculate karo",
+          "explanation": "(–1)² = 1, –3×(–1) = +3, then –4. Total = 1+3–4 = 0. Isliye –1 ek zero hai!"
+        },
+        {
+          "id": "q2",
+          "question": "ax² + bx + c mein zeroes ka sum kya hai?",
+          "options": ["–b/a", "b/a", "c/a", "–c/a"],
+          "correctIndex": 0,
+          "hint": "Formula: α + β = –(coefficient of x) / (coefficient of x²)",
+          "explanation": "NCERT result: α + β = –b/a. Yaad karo: sum = NEGATIVE of b/a."
+        },
+        {
+          "id": "q3",
+          "question": "ax² + bx + c mein zeroes ka product kya hai?",
+          "options": ["c/a", "–c/a", "b/a", "–b/a"],
+          "correctIndex": 0,
+          "hint": "Formula: αβ = constant term / leading coefficient",
+          "explanation": "NCERT result: αβ = c/a. Product = positive c/a (no negative sign!)"
+        },
+        {
+          "id": "q4",
+          "question": "2x² – 8x + 6 ke zeroes hain:",
+          "options": ["1 aur 3", "2 aur 4", "–1 aur –3", "0 aur 6"],
+          "correctIndex": 0,
+          "hint": "2(x–1)(x–3) = 0 karo",
+          "explanation": "2x²–8x+6 = 2(x²–4x+3) = 2(x–1)(x–3). x=1 ya x=3. Sum=4=8/2 ✅, Product=3=6/2 ✅"
+        },
+        {
+          "id": "q5",
+          "question": "Ek quadratic polynomial ka graph x-axis ko sirf ek point par touch karta hai. Zeroes kitne hain?",
+          "options": ["1 (repeated)", "0", "2", "Infinite"],
+          "correctIndex": 0,
+          "hint": "NCERT Case 2 — tangent to x-axis",
+          "explanation": "Case 2: graph x-axis ko exactly ek point par chhuye → 2 equal zeroes (repeated). Ek hi value hai."
+        }
+      ]
+    },
+    {
+      "setId": "setB",
+      "name": "Set B — Medium",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "x² + 7x + 10 ke zeroes hain:",
+          "options": ["–2 aur –5", "2 aur 5", "–2 aur 5", "2 aur –5"],
+          "correctIndex": 0,
+          "hint": "(x+2)(x+5) = 0",
+          "explanation": "x²+7x+10 = (x+2)(x+5). Zeroes: –2, –5. Sum=–7=–7/1 ✅, Product=10 ✅"
+        },
+        {
+          "id": "q2",
+          "question": "3x² + 5x – 2 ke zeroes hain:",
+          "options": ["1/3 aur –2", "–1/3 aur 2", "1/3 aur 2", "–1/3 aur –2"],
+          "correctIndex": 0,
+          "hint": "(3x–1)(x+2) = 0",
+          "explanation": "3x²+5x–2 = (3x–1)(x+2). Zeroes: 1/3, –2. Sum=1/3–2=–5/3=–5/3 ✅, Product=–2/3 ✅"
+        },
+        {
+          "id": "q3",
+          "question": "Sum = 0, Product = –√5 wala quadratic polynomial kaunsa hai?",
+          "options": ["x² – √5", "x² + √5", "x² – √5x", "x² + √5x"],
+          "correctIndex": 0,
+          "hint": "x² – (sum)x + product = x² – 0·x + (–√5)",
+          "explanation": "x² – 0x + (–√5) = x² – √5. Verify: zeroes √5 aur –√5. Sum=0 ✅, Product=–√5 ✅"
+        },
+        {
+          "id": "q4",
+          "question": "4u² + 8u ke zeroes hain:",
+          "options": ["0 aur –2", "0 aur 2", "4 aur 2", "–4 aur –2"],
+          "correctIndex": 0,
+          "hint": "4u(u + 2) = 0",
+          "explanation": "4u²+8u = 4u(u+2). Zeroes: u=0 ya u=–2. Sum=–2=–8/4 ✅, Product=0=0/4 ✅"
+        },
+        {
+          "id": "q5",
+          "question": "Cubic polynomial 2x³ – 5x² – 14x + 8 mein zeroes 4, –2, 1/2 hain. Product kya hai?",
+          "options": ["–4", "4", "–8", "8"],
+          "correctIndex": 0,
+          "hint": "αβγ = –d/a = –(8)/2",
+          "explanation": "Formula: αβγ = –d/a = –8/2 = –4. Verify: 4×(–2)×(1/2) = –4 ✅"
+        }
+      ]
+    },
+    {
+      "setId": "setC",
+      "name": "Set C — Board Level",
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "p(x) = x³ – 4x ke zeroes hain: –2, 0, 2. Sum of products (pairs) kya hai?",
+          "options": ["–4", "4", "0", "–8"],
+          "correctIndex": 0,
+          "hint": "αβ+βγ+γα = c/a. Here c = –4, a = 1",
+          "explanation": "(–2)(0) + (0)(2) + (2)(–2) = 0 + 0 – 4 = –4. Formula: c/a = –4/1 = –4 ✅"
+        },
+        {
+          "id": "q2",
+          "question": "Ek quadratic polynomial ke zeroes 2+√3 aur 2–√3 hain. Polynomial kya hai?",
+          "options": ["x²–4x+1", "x²+4x+1", "x²–4x–1", "x²+4x–1"],
+          "correctIndex": 0,
+          "hint": "Sum = (2+√3)+(2–√3) = 4. Product = (2+√3)(2–√3) = 4–3 = 1",
+          "explanation": "Sum=4, Product=1. Polynomial: x²–4x+1. Verify: D=16–4=12>0. Zeroes=2±√3 ✅"
+        },
+        {
+          "id": "q3",
+          "question": "p(x) = kx² + 2x + 3k mein zeroes ka sum = product. k kya hai?",
+          "options": ["–2/3", "2/3", "–1/3", "1/3"],
+          "correctIndex": 0,
+          "hint": "Sum = –2/k, Product = 3k/k = 3. –2/k = 3 solve karo.",
+          "explanation": "Sum = –2/k, Product = 3k/k = 3. Condition: –2/k = 3 → k = –2/3"
+        },
+        {
+          "id": "q4",
+          "question": "Exercise 2.2 (vi): Sum = 4, Product = 1 wala quadratic polynomial:",
+          "options": ["x²–4x+1", "x²+4x+1", "x²–4x–1", "4x²–x+1"],
+          "correctIndex": 0,
+          "hint": "x² – (sum)x + product",
+          "explanation": "x² – 4x + 1. Verify: zeroes = (4±√12)/2 = 2±√3. Sum=4 ✅, Product=1 ✅"
+        },
+        {
+          "id": "q5",
+          "question": "p(x) = 2x³ – 5x² – 14x + 8 mein α+β+γ kya hai?",
+          "options": ["5/2", "–5/2", "7", "–7"],
+          "correctIndex": 0,
+          "hint": "α+β+γ = –b/a = –(–5)/2",
+          "explanation": "–b/a = –(–5)/2 = 5/2. Verify: 4+(–2)+1/2 = 2+1/2 = 5/2 ✅"
+        }
+      ]
+    }
+  ]
+}

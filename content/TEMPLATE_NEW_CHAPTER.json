@@ -1,0 +1,108 @@
+{
+  "subject": "maths",
+  "chapterId": "ch06",
+  "chapterNum": 6,
+  "name": "Triangles",
+  "emoji": "△",
+  "color": "#FF6B35",
+  "intro": "Is chapter ka short overview yahan likhein — 2-3 sentences mein kya cover hoga.",
+
+  "topics": [
+    {
+      "id": "t1",
+      "name": "Topic ka naam yahan",
+      "desc": "Short description — 1 line",
+      "icon": "📐",
+      "xp": 20,
+      "difficulty": "easy",
+      "steps": [
+
+        {
+          "type": "story",
+          "title": "Story Title 📖",
+          "body": "Ek engaging real-life story likho jo concept se connect kare. 3-4 lines kaafi hain."
+        },
+
+        {
+          "type": "concept",
+          "title": "Concept ka Title",
+          "body": "**Bold text** ke liye double asterisk.\n\nNaya paragraph ke liye blank line.\n\nBullet points:\n• Point 1\n• Point 2\n• Point 3"
+        },
+
+        {
+          "type": "formula",
+          "title": "Formula Name",
+          "formula": "Formula yahan likhein — jaise: aₙ = a + (n-1)d",
+          "note": "Formula ke baad notes:\nVariables explain karo\nExample bhi daal sakte ho"
+        },
+
+        {
+          "type": "example",
+          "title": "Example Title",
+          "question": "Question text yahan likhein",
+          "steps": [
+            { "num": "1", "text": "Pehla step" },
+            { "num": "2", "text": "Doosra step" },
+            { "num": "3", "text": "Answer ✅" }
+          ]
+        },
+
+        {
+          "type": "practice",
+          "title": "Practice Karo!",
+          "questions": [
+            {
+              "question": "Practice question 1",
+              "answer": "Answer with explanation"
+            },
+            {
+              "question": "Practice question 2",
+              "answer": "Answer with explanation"
+            }
+          ]
+        },
+
+        {
+          "type": "remember",
+          "title": "Yaad Rakhna! 🧠",
+          "points": [
+            "Important point 1",
+            "Important point 2",
+            "Exam tip 3"
+          ]
+        }
+
+      ]
+    }
+  ],
+
+  "quizSets": [
+    {
+      "setId": "setA",
+      "name": "Set A — Basic",
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "MCQ question yahan",
+          "options": ["Option A", "Option B", "Option C", "Option D"],
+          "correctIndex": 0,
+          "hint": "Short hint for student",
+          "explanation": "Detailed explanation why A is correct"
+        }
+      ]
+    },
+    {
+      "setId": "setB",
+      "name": "Set B — Medium",
+      "difficulty": "medium",
+      "questions": []
+    },
+    {
+      "setId": "setC",
+      "name": "Set C — Board Level",
+      "difficulty": "hard",
+      "questions": []
+    }
+  ]
+}

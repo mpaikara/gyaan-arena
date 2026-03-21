@@ -1,0 +1,304 @@
+{
+  "subject": "maths",
+  "chapterId": "ch01",
+  "chapterNum": 1,
+  "name": "Real Numbers",
+  "emoji": "🔢",
+  "color": "#FF6B35",
+  "intro": "Euclid's Division Lemma, Fundamental Theorem of Arithmetic, HCF/LCM prime factorisation se, aur irrational numbers ka proof — sab is chapter mein hain!",
+  "topics": [
+    {
+      "id": "t1",
+      "name": "Euclid's Division Lemma & HCF",
+      "desc": "Kisi bhi do positive integers ko divide karke HCF nikalo",
+      "icon": "➗",
+      "xp": 20,
+      "difficulty": "easy",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Euclid Ka Magical Division Trick! 🏛️",
+          "body": "Socho Ramesh ke paas 135 chocolates hain aur 5 friends hain. 135 = 5 × 27 + 0. Yahi hai Euclid's Division Lemma — kisi bhi do numbers a aur b ke liye:\na = bq + r  (jahan 0 ≤ r < b)\nAur isi se hum HCF nikaal sakte hain!"
+        },
+        {
+          "type": "concept",
+          "title": "Euclid's Division Algorithm",
+          "body": "**Theorem:** Kisi bhi do positive integers a aur b ke liye, unique integers q aur r exist karte hain:\na = bq + r, jahan 0 ≤ r < b\n\n**HCF Algorithm Steps:**\n1. Bade number ko chhote se divide karo\n2. Remainder 0 aaye tab tak repeat karo\n3. Jab r = 0, uss waqt ka divisor = HCF!"
+        },
+        {
+          "type": "formula",
+          "title": "Euclid's Division Lemma",
+          "formula": "a = bq + r    (0 ≤ r < b)",
+          "note": "a = dividend, b = divisor, q = quotient, r = remainder\nHCF Algorithm: Jab tak r ≠ 0, apply karte raho\nJab r = 0, uss waqt ka b = HCF"
+        },
+        {
+          "type": "example",
+          "title": "HCF(135, 225) Nikalo",
+          "question": "HCF(135, 225) Euclid's Division Algorithm se nikalo",
+          "steps": [
+            { "num": "1", "text": "225 = 135 × 1 + 90" },
+            { "num": "2", "text": "135 = 90 × 1 + 45" },
+            { "num": "3", "text": "90 = 45 × 2 + 0 ← Remainder 0!" },
+            { "num": "4", "text": "HCF(135, 225) = 45 ✅" }
+          ]
+        },
+        {
+          "type": "practice",
+          "title": "Practice Karo!",
+          "questions": [
+            {
+              "question": "HCF(81, 237) nikalo Euclid se",
+              "answer": "237=81×2+75 → 81=75×1+6 → 75=6×12+3 → 6=3×2+0 → HCF=3"
+            },
+            {
+              "question": "Kya 6n kabhi 0 se end ho sakta hai?",
+              "answer": "Nahi! 6n = (2×3)n. Isme 5 ka prime factor nahi. Isliye kabhi nahi."
+            }
+          ]
+        },
+        {
+          "type": "remember",
+          "title": "Board Exam Tips",
+          "points": [
+            "Euclid Algorithm mein hamesha bada ÷ chhota karo",
+            "Jab remainder = 0 aaye, uss divisor = HCF",
+            "HCF × LCM = product of two numbers (SIRF 2 numbers!)",
+            "Coprime = HCF = 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "name": "Fundamental Theorem of Arithmetic",
+      "desc": "Har composite number uniquely prime factors ka product",
+      "icon": "🔱",
+      "xp": 25,
+      "difficulty": "easy",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Prime Numbers Ki Factory! 🔢",
+          "body": "Ek factory mein sirf prime numbers kaam karte hain — 2, 3, 5, 7...\nYeh factory har koi bhi number bana sakti hai!\n12 = 2 × 2 × 3\n84 = 2 × 2 × 3 × 7\nAur yeh amazing hai ki yeh ek UNIQUE tarika hai!"
+        },
+        {
+          "type": "concept",
+          "title": "Theorem",
+          "body": "**Theorem:** Har composite number ko primes ke product ke roop mein likha ja sakta hai — UNIQUELY!\n\n**HCF:** Common primes ki SABSE CHHOTI powers\n**LCM:** Sab primes ki SABSE BADI powers\n\n**Important:** HCF × LCM = a × b (SIRF 2 numbers ke liye!)"
+        },
+        {
+          "type": "formula",
+          "title": "HCF aur LCM",
+          "formula": "HCF × LCM = a × b",
+          "note": "Example: 6 = 2¹×3¹, 20 = 2²×5¹\nHCF = 2¹ = 2\nLCM = 2²×3×5 = 60\nVerify: 2×60 = 120 = 6×20 ✅"
+        },
+        {
+          "type": "example",
+          "title": "HCF(96, 404)",
+          "question": "HCF(96, 404) prime factorisation se nikalo",
+          "steps": [
+            { "num": "1", "text": "96 = 2⁵ × 3" },
+            { "num": "2", "text": "404 = 2² × 101" },
+            { "num": "3", "text": "HCF = 2² = 4 ✅" },
+            { "num": "4", "text": "LCM = 96×404÷4 = 9696 ✅" }
+          ]
+        },
+        {
+          "type": "remember",
+          "title": "Yaad Rakho!",
+          "points": [
+            "HCF = smallest power of COMMON primes",
+            "LCM = LARGEST power of ALL primes",
+            "HCF × LCM = a × b (sirf 2 numbers ke liye)",
+            "4ⁿ = 2²ⁿ — koi 5 nahi, isliye 0 se end nahi hoga!"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "name": "Irrational Numbers ka Proof",
+      "desc": "√2, √3 irrational hain — proof by contradiction",
+      "icon": "🔍",
+      "xp": 30,
+      "difficulty": "medium",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Mathematician Ki Khoj! 🔬",
+          "body": "Ek mathematician ne prove kiya: √2 ko fraction mein nahi likha ja sakta!\nUsne try kiya √2 = p/q... aur result mila p aur q dono mein 2 common — CONTRADICTION!\nYahi 'Proof by Contradiction' hai."
+        },
+        {
+          "type": "formula",
+          "title": "√2 Irrational — Complete Proof",
+          "formula": "Assume √2 = p/q (coprime) → Contradiction!",
+          "note": "1. Maan lo √2 = p/q (coprime, q≠0)\n2. p² = 2q² → 2 divides p → p=2m\n3. 4m² = 2q² → q²=2m² → 2 divides q\n4. 2 divides BOTH p aur q — CONTRADICTION!\n5. ∴ √2 is IRRATIONAL ✅"
+        },
+        {
+          "type": "example",
+          "title": "5 - √3 Irrational Hai",
+          "question": "Prove karo ki 5 - √3 irrational hai",
+          "steps": [
+            { "num": "1", "text": "Maan lo 5 - √3 = a/b (rational)" },
+            { "num": "2", "text": "√3 = 5 - a/b = (5b-a)/b = rational" },
+            { "num": "3", "text": "Par √3 IRRATIONAL hai — CONTRADICTION!" },
+            { "num": "4", "text": "∴ 5 - √3 irrational hai ✅" }
+          ]
+        },
+        {
+          "type": "remember",
+          "title": "Key Rules",
+          "points": [
+            "√p irrational (p prime): √2, √3, √5, √7...",
+            "Rational ± Irrational = Irrational",
+            "Non-zero Rational × Irrational = Irrational",
+            "Proof: assume rational → show contradiction"
+          ]
+        }
+      ]
+    }
+  ],
+  "quizSets": [
+    {
+      "setId": "setA",
+      "name": "Set A — Basic",
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "HCF(6, 20) prime factorisation se kya hoga?",
+          "options": ["2", "3", "6", "12"],
+          "correctIndex": 0,
+          "hint": "6=2×3, 20=2²×5. Common prime = 2. Smallest power = 2¹.",
+          "explanation": "6 = 2¹×3¹ aur 20 = 2²×5¹. Common prime = 2. Smallest power = 2¹. HCF = 2."
+        },
+        {
+          "id": "q2",
+          "question": "LCM(6, 20) kya hai?",
+          "options": ["60", "120", "40", "30"],
+          "correctIndex": 0,
+          "hint": "LCM = sabse badi powers of ALL primes = 2² × 3 × 5",
+          "explanation": "Sab prime factors: 2² × 3¹ × 5¹ = 4 × 3 × 5 = 60."
+        },
+        {
+          "id": "q3",
+          "question": "√2 ke baare mein kya sach hai?",
+          "options": ["Irrational", "Rational", "Integer", "Natural number"],
+          "correctIndex": 0,
+          "hint": "Proof by contradiction — fraction form mein nahi likha ja sakta.",
+          "explanation": "√2 = 1.41421356... kabhi khatam nahi hota. Proof by contradiction se irrational sabit hota hai."
+        },
+        {
+          "id": "q4",
+          "question": "4ⁿ ka last digit 0 kab hoga?",
+          "options": ["Kabhi nahi", "n=5 par", "n=10 par", "n=2 par"],
+          "correctIndex": 0,
+          "hint": "4ⁿ = 2²ⁿ mein sirf prime 2 hai, 5 nahi!",
+          "explanation": "0 se end hone ke liye 10=2×5 ka factor chahiye. 4ⁿ=2²ⁿ mein sirf 2 hai. Isliye kabhi nahi."
+        },
+        {
+          "id": "q5",
+          "question": "5 - √3 kya hai?",
+          "options": ["Irrational", "Rational", "Integer", "Zero"],
+          "correctIndex": 0,
+          "hint": "Rational - Irrational = Irrational hota hai hamesha.",
+          "explanation": "Maan lo rational. Toh √3 = 5 - (p/q) = rational. Par √3 irrational — contradiction!"
+        }
+      ]
+    },
+    {
+      "setId": "setB",
+      "name": "Set B — Medium",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "HCF(96, 404) kya hai?",
+          "options": ["4", "2", "8", "12"],
+          "correctIndex": 0,
+          "hint": "96=2⁵×3, 404=2²×101. Common=2, smallest power=2².",
+          "explanation": "96=2⁵×3, 404=2²×101. Common prime=2, min power=2². HCF=4."
+        },
+        {
+          "id": "q2",
+          "question": "HCF(a,b)=18 aur LCM(a,b)=108. a=36 hai toh b?",
+          "options": ["54", "36", "72", "27"],
+          "correctIndex": 0,
+          "hint": "HCF × LCM = a × b. 18 × 108 = 36 × b.",
+          "explanation": "18 × 108 = 36 × b → b = 1944/36 = 54."
+        },
+        {
+          "id": "q3",
+          "question": "3√2 kya hai?",
+          "options": ["Irrational", "Rational", "Integer", "Prime"],
+          "correctIndex": 0,
+          "hint": "Non-zero rational × irrational = irrational.",
+          "explanation": "Maan lo 3√2 = p/q → √2 = p/3q = rational. Par √2 irrational — contradiction!"
+        },
+        {
+          "id": "q4",
+          "question": "Sonia 18 min mein ek round, Ravi 12 min mein. Kitne min baad milenge?",
+          "options": ["36 min", "18 min", "12 min", "6 min"],
+          "correctIndex": 0,
+          "hint": "LCM(18, 12) nikalo!",
+          "explanation": "18=2×3², 12=2²×3. LCM=2²×3²=36 minutes."
+        },
+        {
+          "id": "q5",
+          "question": "HCF(306, 657) = 9 hai toh LCM kya hai?",
+          "options": ["22338", "22000", "21000", "23000"],
+          "correctIndex": 0,
+          "hint": "HCF × LCM = a × b",
+          "explanation": "LCM = 306 × 657 / 9 = 22338."
+        }
+      ]
+    },
+    {
+      "setId": "setC",
+      "name": "Set C — Board Level",
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "7 × 11 × 13 + 13 kya hai?",
+          "options": ["Composite", "Prime", "Irrational", "None"],
+          "correctIndex": 0,
+          "hint": "13(7×11+1) = 13 × 78. Common factor 13!",
+          "explanation": "13(7×11+1) = 13×78. Factor 13 hai — composite number!"
+        },
+        {
+          "id": "q2",
+          "question": "6ⁿ kisi bhi n ke liye 0 se end ho sakta hai?",
+          "options": ["Nahi, kabhi nahi", "Haan n bade par", "n=6 par", "Haan hamesha"],
+          "correctIndex": 0,
+          "hint": "6ⁿ = 2ⁿ × 3ⁿ — koi 5 nahi!",
+          "explanation": "0 se end ke liye 2 aur 5 dono chahiye. 6ⁿ=2ⁿ×3ⁿ mein 5 nahi. Isliye kabhi nahi."
+        },
+        {
+          "id": "q3",
+          "question": "1/√2 kya hai?",
+          "options": ["Irrational", "Rational", "Natural", "Integer"],
+          "correctIndex": 0,
+          "hint": "1/(irrational) = irrational.",
+          "explanation": "Maan lo 1/√2=p/q. Toh √2=q/p=rational. Par √2 irrational — contradiction!"
+        },
+        {
+          "id": "q4",
+          "question": "HCF(a,b) = 1 ka matlab kya hai?",
+          "options": ["a aur b coprime hain", "a=b", "a=1 ya b=1", "a+b=1"],
+          "correctIndex": 0,
+          "hint": "Coprime = koi common factor nahi (sirf 1).",
+          "explanation": "HCF=1 → a aur b mein koi common factor nahi. Inhe coprime ya relatively prime kehte hain."
+        },
+        {
+          "id": "q5",
+          "question": "Prove karo ki n²-n hamesha even hai. Reason?",
+          "options": ["n(n-1) = consecutive integers ka product", "n² even hai", "n hamesha even hai", "None"],
+          "correctIndex": 0,
+          "hint": "n²-n = n(n-1). Consecutive integers mein ek hamesha even!",
+          "explanation": "n(n-1) = consecutive integers. Inme se ek hamesha even. Even×anything = even. ✅"
+        }
+      ]
+    }
+  ]
+}

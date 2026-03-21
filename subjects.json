@@ -1,0 +1,92 @@
+{
+  "app": {
+    "name": "Gyaan Arena",
+    "tagline": "Class 10 CBSE — Hinglish mein Padho!",
+    "class": 10,
+    "board": "CBSE"
+  },
+  "subjects": [
+    {
+      "id": "maths",
+      "name": "Mathematics",
+      "emoji": "📐",
+      "color": "#FF6B35",
+      "chapters": [
+        { "id": "ch01", "name": "Real Numbers", "topics": 3, "quizSets": 3, "status": "ready" },
+        { "id": "ch02", "name": "Polynomials", "topics": 3, "quizSets": 3, "status": "ready" },
+        { "id": "ch03", "name": "Pair of Linear Equations", "topics": 3, "quizSets": 3, "status": "ready" },
+        { "id": "ch04", "name": "Quadratic Equations", "topics": 3, "quizSets": 3, "status": "ready" },
+        { "id": "ch05", "name": "Arithmetic Progressions", "topics": 3, "quizSets": 3, "status": "ready" },
+        { "id": "ch06", "name": "Triangles", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch07", "name": "Coordinate Geometry", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch08", "name": "Introduction to Trigonometry", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch09", "name": "Applications of Trigonometry", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch10", "name": "Circles", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch11", "name": "Areas Related to Circles", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch12", "name": "Surface Areas and Volumes", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch13", "name": "Statistics", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch14", "name": "Probability", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch15", "name": "Revision and Board Practice", "topics": 0, "quizSets": 0, "status": "coming" }
+      ]
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "emoji": "🔬",
+      "color": "#3FB950",
+      "chapters": [
+        { "id": "ch01", "name": "Chemical Reactions and Equations", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch02", "name": "Acids, Bases and Salts", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch03", "name": "Metals and Non-metals", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch04", "name": "Carbon and its Compounds", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch05", "name": "Life Processes", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch06", "name": "Control and Coordination", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch07", "name": "How do Organisms Reproduce?", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch08", "name": "Heredity", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch09", "name": "Light — Reflection and Refraction", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch10", "name": "Human Eye and Colourful World", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch11", "name": "Electricity", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch12", "name": "Magnetic Effects of Electric Current", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch13", "name": "Our Environment", "topics": 0, "quizSets": 0, "status": "coming" }
+      ]
+    },
+    {
+      "id": "social",
+      "name": "Social Science",
+      "emoji": "🌍",
+      "color": "#A371F7",
+      "chapters": [
+        { "id": "ch01", "name": "The Rise of Nationalism in Europe", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch02", "name": "Nationalism in India", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch03", "name": "The Making of a Global World", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch04", "name": "The Age of Industrialisation", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch05", "name": "Resources and Development", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch06", "name": "Forest and Wildlife Resources", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch07", "name": "Water Resources", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch08", "name": "Agriculture", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch09", "name": "Power Sharing", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch10", "name": "Federalism", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch11", "name": "Development", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch12", "name": "Money and Credit", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch13", "name": "Globalisation and the Indian Economy", "topics": 0, "quizSets": 0, "status": "coming" }
+      ]
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "emoji": "📖",
+      "color": "#F0B429",
+      "chapters": [
+        { "id": "ch01", "name": "A Letter to God", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch02", "name": "Nelson Mandela — Long Walk to Freedom", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch03", "name": "Two Stories about Flying", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch04", "name": "From the Diary of Anne Frank", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch05", "name": "Glimpses of India", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch06", "name": "Mijbil the Otter", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch07", "name": "Madam Rides the Bus", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch08", "name": "The Sermon at Benares", "topics": 0, "quizSets": 0, "status": "coming" },
+        { "id": "ch09", "name": "The Proposal", "topics": 0, "quizSets": 0, "status": "coming" }
+      ]
+    }
+  ]
+}

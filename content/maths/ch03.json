@@ -1,0 +1,361 @@
+{
+  "subject": "maths",
+  "chapterId": "ch03",
+  "chapterNum": 3,
+  "name": "Pair of Linear Equations",
+  "emoji": "📏",
+  "color": "#58A6FF",
+  "intro": "Do equations, do unknowns — aur graph par do seedhi lines! Yeh chapter sikhata hai ki 2 linear equations ko graphically aur algebraically kaise solve karein. Akhila ki Giant Wheel wali story se shuru karein!",
+
+  "topics": [
+    {
+      "id": "t1",
+      "name": "Introduction aur 3 Types of Lines",
+      "desc": "Intersecting, Parallel, Coincident — teen cases samjho",
+      "icon": "📏",
+      "xp": 25,
+      "difficulty": "easy",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Akhila Ki Giant Wheel Wali Problem! 🎡",
+          "body": "Akhila apne gaon ke mele mein gayi. Usne Giant Wheel par rides liye aur Hoopla game khela.\n\nUsne bataya:\n• Hoopla ki times = Giant Wheel rides ki AADHI\n• Har ride = ₹3, Har Hoopla = ₹4\n• Total spend = ₹20\n\nAgar rides = x aur Hoopla = y ho toh:\ny = x/2  ...(1)\n3x + 4y = 20  ...(2)\n\nYeh ek PAIR OF LINEAR EQUATIONS hai! Isko solve karna hai."
+        },
+        {
+          "type": "concept",
+          "title": "Linear Equation in 2 Variables — Kya Hota Hai?",
+          "body": "**General form: ax + by + c = 0** (a, b dono zero nahi)\n\nYeh ek straight line represent karta hai graph par.\n\n**Pair of linear equations:**\na₁x + b₁y + c₁ = 0\na₂x + b₂y + c₂ = 0\n\n→ Graph par DO seedhi lines!\n\n**3 possibilities hain:**\n✅ Lines intersect → Unique solution\n✅ Lines coincide → Infinite solutions\n❌ Lines parallel → No solution"
+        },
+        {
+          "type": "visual",
+          "visualId": "three-line-types",
+          "title": "Teen Types of Line Pairs — Interactive!",
+          "intro": "Buttons dabao aur teeno cases dekho. NCERT Table 3.1 ka yeh live version hai!"
+        },
+        {
+          "type": "formula",
+          "title": "Ratio Test — Bina Graph ke Pehchano!",
+          "formula": "a₁/a₂  vs  b₁/b₂  vs  c₁/c₂",
+          "note": "a₁/a₂ ≠ b₁/b₂  →  Intersecting lines  →  Unique solution\n\na₁/a₂ = b₁/b₂ = c₁/c₂  →  Coincident lines  →  Infinite solutions\n\na₁/a₂ = b₁/b₂ ≠ c₁/c₂  →  Parallel lines  →  No solution\n\nExample: x–2y=0 aur 3x+4y–20=0\na₁/a₂ = 1/3, b₁/b₂ = –2/4 = –1/2\n1/3 ≠ –1/2  →  Intersecting!  →  Unique solution ✅"
+        },
+        {
+          "type": "practice",
+          "title": "Ratio Test Practice Karo",
+          "questions": [
+            {
+              "question": "Check karo: 9x+3y+12=0 aur 18x+6y+24=0 — kaisi lines hain?",
+              "answer": "a₁/a₂ = 9/18 = 1/2, b₁/b₂ = 3/6 = 1/2, c₁/c₂ = 12/24 = 1/2. Teeno equal → Coincident lines → Infinite solutions!"
+            },
+            {
+              "question": "Check karo: x+2y–4=0 aur 2x+4y–12=0 — kaisi lines hain?",
+              "answer": "a₁/a₂ = 1/2, b₁/b₂ = 2/4 = 1/2, c₁/c₂ = –4/–12 = 1/3. a/a = b/b ≠ c/c → Parallel lines → No solution!"
+            },
+            {
+              "question": "5x–4y+8=0 aur 7x+6y–9=0 mein a₁/a₂ aur b₁/b₂ compare karo",
+              "answer": "a₁/a₂ = 5/7, b₁/b₂ = –4/6 = –2/3. 5/7 ≠ –2/3 → Intersecting → Unique solution!"
+            }
+          ]
+        },
+        {
+          "type": "remember",
+          "title": "Key Points — Yaad Rakhna! 🧠",
+          "points": [
+            "Pair of linear equations = graph par 2 straight lines",
+            "Intersecting (a₁/a₂ ≠ b₁/b₂) → 1 solution (consistent)",
+            "Coincident (a₁/a₂ = b₁/b₂ = c₁/c₂) → ∞ solutions (dependent consistent)",
+            "Parallel (a₁/a₂ = b₁/b₂ ≠ c₁/c₂) → No solution (inconsistent)",
+            "Ratio test se bina graph ke pata chal jaata hai!"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "t2",
+      "name": "Graphical Method",
+      "desc": "Do lines draw karo — intersection = solution!",
+      "icon": "📈",
+      "xp": 30,
+      "difficulty": "easy",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Graph Par Do Lines — Seedha Answer! 🎯",
+          "body": "NCERT Example 1: Akhila ki problem!\nx – 2y = 0  ...(1)\n3x + 4y – 20 = 0  ...(2)\n\nDono equations ke 2-2 points nikalo:\nEq(1): x=0→y=0, x=2→y=1\nEq(2): x=0→y=5, x=4→y=2\n\nGraph par plot karo — jahan lines milein woh SOLUTION hai!\nAnswer: x=4, y=2 ✅\n\nYani Akhila ne 4 Giant Wheel rides liye aur 2 baar Hoopla khela!"
+        },
+        {
+          "type": "visual",
+          "visualId": "graphical-method",
+          "title": "Graphical Method — Live Graph! (NCERT Fig 3.1 & 3.2)",
+          "intro": "Equations choose karo aur dekho do lines kahan milti hain — wahi solution hai!"
+        },
+        {
+          "type": "concept",
+          "title": "Graphical Method — Steps",
+          "body": "**Step 1:** Dono equations ke liye 2-2 points ka table banao\n(x=0 rakhke y nikalo, phir y=0 rakhke x nikalo)\n\n**Step 2:** Points plot karo aur lines draw karo\n\n**Step 3:** Lines ka intersection point dhundho\n→ Woh point (x, y) = SOLUTION hai!\n\n**Limitation:** Agar solution irrational ho jaise (√3, 2√7) ya (4/13, 1/19) toh graph se exact value padhna mushkil hai!\n\n**Isliye:** Algebraic methods better hain exact answers ke liye."
+        },
+        {
+          "type": "example",
+          "title": "NCERT Example 3 — Champa ki Pants & Skirts",
+          "question": "Champa ne bataya: Skirts = 2×Pants – 2, aur Skirts = 4×Pants – 4. Graphically solve karo.",
+          "steps": [
+            { "num": "1", "text": "Let pants = x, skirts = y. Equations: y = 2x–2 ...(1) aur y = 4x–4 ...(2)" },
+            { "num": "2", "text": "Eq(1) ke points: x=0→y=–2, x=2→y=2. Eq(2) ke points: x=0→y=–4, x=1→y=0" },
+            { "num": "3", "text": "Graph plot karo. Lines (1, 0) par milti hain!" },
+            { "num": "4", "text": "Solution: x=1, y=0 → Champa ne 1 pant kharida, 0 skirts! ✅" }
+          ]
+        },
+        {
+          "type": "practice",
+          "title": "Graphical Method Practice",
+          "questions": [
+            {
+              "question": "x+3y=6 aur 2x–3y=12 ke 2-2 points nikalo",
+              "answer": "Eq1: x=0→y=2 yaani (0,2), x=6→y=0 yaani (6,0). Eq2: x=0→y=–4 yaani (0,–4), x=3→y=–2 yaani (3,–2). Lines B(6,0) par milti hain → x=6, y=0!"
+            },
+            {
+              "question": "Agar do lines parallel hain toh graph par kya dikhega?",
+              "answer": "Dono lines kabhi nahi milengi — koi intersection point nahi! Solution exist hi nahi karta (inconsistent pair)."
+            }
+          ]
+        },
+        {
+          "type": "remember",
+          "title": "Graphical Method Summary",
+          "points": [
+            "Table: 2 points har equation ke liye (x=0 aur y=0 substitue karo)",
+            "Plot + Line draw karo",
+            "Intersection = Solution",
+            "Parallel lines = No solution, Coincident = Infinite solutions",
+            "Non-integer solutions mein graph se exact value mushkil hoti hai"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "t3",
+      "name": "Substitution & Elimination Method",
+      "desc": "Algebraic methods — exact answers guaranteed!",
+      "icon": "🧮",
+      "xp": 40,
+      "difficulty": "medium",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Graph Se Better — Algebra Ka Magic! ✨",
+          "body": "Graph mein problem: Solution (√3, 2√7) ya (4/13, 1/19) jaisi irrational values padhna impossible!\n\nIsliye NCERT ne 2 algebraic methods diye:\n\n1️⃣ **Substitution Method:** Ek variable ko doosre ke terms mein likho\n\n2️⃣ **Elimination Method:** Dono equations add/subtract karke ek variable hatao\n\nDono same answer dete hain — sirf approach alag hai!"
+        },
+        {
+          "type": "visual",
+          "visualId": "substitution-steps",
+          "title": "Substitution Method — Step-by-Step Visual",
+          "intro": "NCERT Example 4: 7x–15y=2 aur x+2y=3 ko substitution se solve karte hain. Har step animated hai!"
+        },
+        {
+          "type": "example",
+          "title": "NCERT Example 5 — Aftab aur Beti Ki Umar",
+          "question": "7 saal pehle Aftab apni beti se 7 guna bada tha. 3 saal baad 3 guna bada hoga. Abhi kitni umar hai?",
+          "steps": [
+            { "num": "1", "text": "Let Aftab = s years, beti = t years. Equations: s–7 = 7(t–7) → s–7t+42=0 ...(1) aur s+3 = 3(t+3) → s–3t=6 ...(2)" },
+            { "num": "2", "text": "Eq(2) se: s = 3t+6 ...(3)" },
+            { "num": "3", "text": "Eq(1) mein substitute: (3t+6)–7t+42=0 → –4t+48=0 → t=12" },
+            { "num": "4", "text": "s = 3(12)+6 = 42. Answer: Aftab = 42 saal, Beti = 12 saal ✅" }
+          ]
+        },
+        {
+          "type": "visual",
+          "visualId": "elimination-steps",
+          "title": "Elimination Method — Step-by-Step Visual",
+          "intro": "NCERT Example 8: Do logon ki income 9:7 aur expenditure 4:3. Har mahine ₹2000 bachate hain. Income nikalo!"
+        },
+        {
+          "type": "example",
+          "title": "NCERT Example 10 — Do Digit Number Puzzle",
+          "question": "Do digit number + reversed number = 66. Digits ka difference = 2. Number kya hai?",
+          "steps": [
+            { "num": "1", "text": "Let tens digit = x, units digit = y. Number = 10x+y, Reversed = 10y+x" },
+            { "num": "2", "text": "(10x+y)+(10y+x)=66 → 11(x+y)=66 → x+y=6 ...(1)" },
+            { "num": "3", "text": "Digits differ by 2: x–y=2 ...(2) ya y–x=2 ...(3)" },
+            { "num": "4", "text": "Case 1: (1)+(2) → 2x=8 → x=4, y=2 → Number=42" },
+            { "num": "5", "text": "Case 2: (1)+(3) → 2y=8 → y=4, x=2 → Number=24. Dono valid! ✅" }
+          ]
+        },
+        {
+          "type": "practice",
+          "title": "NCERT Exercise Practice",
+          "questions": [
+            {
+              "question": "Substitution se solve karo: x+y=14 aur x–y=4",
+              "answer": "Eq2 se: x=y+4. Eq1 mein: (y+4)+y=14 → 2y=10 → y=5. x=9. Answer: x=9, y=5 ✅"
+            },
+            {
+              "question": "Elimination se solve karo: 3x+4y=10 aur 2x–2y=2",
+              "answer": "Eq2×2: 4x–4y=4. Ab Eq1+new: 7x=14 → x=2. Eq1 mein: 6+4y=10 → y=1. Answer: x=2, y=1 ✅"
+            },
+            {
+              "question": "Taxi problem: 10km=₹105, 15km=₹155. Fixed charge aur per km charge nikalo",
+              "answer": "Let fixed=a, per km=b. a+10b=105, a+15b=155. Subtract: 5b=50 → b=10. a=105–100=5. Fixed=₹5, Per km=₹10. 25km=5+250=₹255"
+            }
+          ]
+        },
+        {
+          "type": "remember",
+          "title": "Dono Methods Ka Summary 🏆",
+          "points": [
+            "Substitution: Ek variable express karo → doosre mein daalo → solve",
+            "Elimination: Coefficients equal banao → add/subtract → ek variable khatam",
+            "Dono same answer dete hain — jo easy lage woh use karo!",
+            "18=18 mile → Infinite solutions (same equations)",
+            "0=–4 mile → No solution (parallel lines = inconsistent)",
+            "Board mein: substitution fast hai jab coefficient 1 ho"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "quizSets": [
+    {
+      "setId": "setA",
+      "name": "Set A — Basic Concepts",
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Do linear equations ka graph 2 parallel lines show karta hai. Iska kya matlab hai?",
+          "options": ["No solution (inconsistent)", "Unique solution", "Infinite solutions", "Cannot determine"],
+          "correctIndex": 0,
+          "hint": "Parallel lines kabhi nahi milti — toh solution...",
+          "explanation": "Parallel lines ka intersection koi nahi hota → No solution → Inconsistent pair. Condition: a₁/a₂ = b₁/b₂ ≠ c₁/c₂"
+        },
+        {
+          "id": "q2",
+          "question": "9x+3y+12=0 aur 18x+6y+24=0 mein a₁/a₂ = b₁/b₂ = c₁/c₂ = 1/2. Yeh kaisi lines hain?",
+          "options": ["Coincident — Infinite solutions", "Parallel — No solution", "Intersecting — Unique solution", "Cannot say"],
+          "correctIndex": 0,
+          "hint": "Teeno ratios equal hain — yeh kaunsa case hai?",
+          "explanation": "a₁/a₂ = b₁/b₂ = c₁/c₂ → Coincident lines → Infinite solutions (dependent consistent pair)"
+        },
+        {
+          "id": "q3",
+          "question": "x+y=5 aur 2x+2y=10 mein a₁/a₂ kitna hai?",
+          "options": ["1/2", "2", "1", "5/10"],
+          "correctIndex": 0,
+          "hint": "a₁=1, a₂=2. Simple division karo.",
+          "explanation": "a₁/a₂ = 1/2. b₁/b₂ = 1/2. c₁/c₂ = 5/10 = 1/2. Teeno equal → Coincident → Infinite solutions!"
+        },
+        {
+          "id": "q4",
+          "question": "Graphical method mein solution kahan milta hai?",
+          "options": ["Do lines ke intersection point par", "X-axis par", "Y-axis par", "Origin par"],
+          "correctIndex": 0,
+          "hint": "Jahan dono lines ek dusre ko milti hain...",
+          "explanation": "Do lines ka intersection point = pair of linear equations ka solution. Woh point dono equations satisfy karta hai!"
+        },
+        {
+          "id": "q5",
+          "question": "Substitution method mein pehla step kya hai?",
+          "options": ["Ek variable ko doosre ke terms mein likhna", "Dono equations add karna", "Graph banana", "Coefficients equal karna"],
+          "correctIndex": 0,
+          "hint": "'Substitution' = kisi cheez ki jagah kuch aur rakhna",
+          "explanation": "Step 1: Ek equation se ek variable express karo (jaise x = 3–2y). Phir Step 2: Doosri equation mein substitute karo!"
+        }
+      ]
+    },
+    {
+      "setId": "setB",
+      "name": "Set B — Methods",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Substitution method: x+2y=3 se x=3–2y nikala. Yeh 7x–15y=2 mein daalne par kya milta hai?",
+          "options": ["–29y = –19", "29y = 19", "y = 2/29", "7y = 19"],
+          "correctIndex": 0,
+          "hint": "7(3–2y)–15y=2 solve karo",
+          "explanation": "7(3–2y)–15y=2 → 21–14y–15y=2 → 21–29y=2 → –29y=2–21=–19. So y=19/29!"
+        },
+        {
+          "id": "q2",
+          "question": "Elimination: 9x–4y=2000 aur 7x–3y=2000. Eq1×3 aur Eq2×4 karne par kya milta hai?",
+          "options": ["27x–12y=6000 aur 28x–12y=8000", "9x–12y=6000 aur 28x–12y=8000", "27x–12y=8000 aur 28x–12y=6000", "18x–8y=4000"],
+          "correctIndex": 0,
+          "hint": "Har equation ko uss number se multiply karo",
+          "explanation": "Eq1×3: 27x–12y=6000. Eq2×4: 28x–12y=8000. Ab subtract karo: x=2000. Monthly incomes ₹18000 aur ₹14000!"
+        },
+        {
+          "id": "q3",
+          "question": "2x+3y=9 aur 4x+6y=18 ko substitution se solve karne par 18=18 aata hai. Iska kya matlab?",
+          "options": ["Infinite solutions", "No solution", "x=18, y=0", "Error hai"],
+          "correctIndex": 0,
+          "hint": "True statement with no variable = ?",
+          "explanation": "18=18 ek true statement hai without any variable → Infinite solutions! Dono equations actually same hain (Eq2 = 2×Eq1)."
+        },
+        {
+          "id": "q4",
+          "question": "x+2y–4=0 aur 2x+4y–12=0 mein substitution se –4=0 aata hai. Kya matlab?",
+          "options": ["No solution — parallel lines", "x=–4, y=0", "Infinite solutions", "x=0, y=4"],
+          "correctIndex": 0,
+          "hint": "False statement with no variable = ?",
+          "explanation": "–4=0 ek false statement hai → No solution! Lines parallel hain. a₁/a₂=b₁/b₂=1/2 ≠ c₁/c₂=4/12=1/3."
+        },
+        {
+          "id": "q5",
+          "question": "10 students mein girls = boys + 4. Total = 10. Boys aur Girls kitne hain?",
+          "options": ["Boys=3, Girls=7", "Boys=4, Girls=6", "Boys=5, Girls=5", "Boys=2, Girls=8"],
+          "correctIndex": 0,
+          "hint": "x+y=10 aur y=x+4. Substitution karo!",
+          "explanation": "x+y=10, y=x+4. Substitute: x+(x+4)=10 → 2x=6 → x=3 (boys). y=7 (girls). Verify: 3+7=10 ✅, 7=3+4 ✅"
+        }
+      ]
+    },
+    {
+      "setId": "setC",
+      "name": "Set C — Board Level",
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "5 pencils + 7 pens = ₹50. 7 pencils + 5 pens = ₹46. Ek pencil ki kimat?",
+          "options": ["₹3", "₹5", "₹4", "₹6"],
+          "correctIndex": 0,
+          "hint": "5x+7y=50 aur 7x+5y=46. Add karo phir subtract karo!",
+          "explanation": "Add: 12x+12y=96 → x+y=8. Subtract: –2x+2y=4 → y–x=2. So x=3, y=5. Pencil=₹3, Pen=₹5 ✅"
+        },
+        {
+          "id": "q2",
+          "question": "3/2x + 5/3y=7 aur 9x–10y=14 mein a₁/a₂ kya hai?",
+          "options": ["1/6", "3/9", "1/2", "1/3"],
+          "correctIndex": 0,
+          "hint": "a₁=3/2, a₂=9. (3/2)÷9 = ?",
+          "explanation": "a₁/a₂ = (3/2)/9 = 3/18 = 1/6. b₁/b₂ = (5/3)/(–10) = –5/30 = –1/6. 1/6 ≠ –1/6 → Intersecting → Unique solution!"
+        },
+        {
+          "id": "q3",
+          "question": "Saritha ne 7 din ke liye ₹27 diye. Susy ne 5 din ke liye ₹21 diye. (Pehle 3 din fixed + baad mein per day). Per day extra charge?",
+          "options": ["₹3", "₹2", "₹4", "₹5"],
+          "correctIndex": 0,
+          "hint": "a+4b=27 aur a+2b=21. Subtract karo!",
+          "explanation": "Fixed=a, extra per day=b. a+4b=27 (7 days = 3 fixed + 4 extra). a+2b=21 (5 days = 3 fixed + 2 extra). Subtract: 2b=6 → b=3. a=21–6=15. Fixed=₹15, Extra=₹3/day ✅"
+        },
+        {
+          "id": "q4",
+          "question": "5 years baad Jacob ki umar bete ki 3 guni hogi. 5 saal pehle 7 guni thi. Jacob ki abki umar?",
+          "options": ["40 saal", "35 saal", "42 saal", "30 saal"],
+          "correctIndex": 0,
+          "hint": "J+5=3(S+5) aur J–5=7(S–5). Solve karo!",
+          "explanation": "J+5=3(S+5) → J–3S=10 ...(1). J–5=7(S–5) → J–7S=–30 ...(2). Subtract: 4S=40 → S=10. J=3(10)+10=40. Jacob=40, Son=10 ✅"
+        },
+        {
+          "id": "q5",
+          "question": "2x+3y–8=0 ke saath kaun si equation coincident lines degi?",
+          "options": ["4x+6y–16=0", "2x+3y–4=0", "3x+2y–8=0", "x+y–4=0"],
+          "correctIndex": 0,
+          "hint": "Coincident ke liye a₁/a₂=b₁/b₂=c₁/c₂ chahiye",
+          "explanation": "4x+6y–16=0 mein: a₁/a₂=2/4=1/2, b₁/b₂=3/6=1/2, c₁/c₂=–8/–16=1/2. Teeno equal → Coincident ✅. Basically same equation ka 2 guna!"
+        }
+      ]
+    }
+  ]
+}

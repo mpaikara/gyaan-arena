@@ -1,0 +1,466 @@
+{
+  "subject": "science",
+  "chapterId": "ch01",
+  "chapterNum": 1,
+  "name": "Chemical Reactions and Equations",
+  "emoji": "⚗️",
+  "color": "#3FB950",
+  "intro": "Doodh kyu kharab hota hai? Lohe par rust kyun lagti hai? In sab mein chemical reactions hoti hain! Is chapter mein hum chemical equations likhna, balance karna, aur reaction ke types samjhenge.",
+  "topics": [
+    {
+      "id": "t1",
+      "name": "Chemical Equations — Likhna aur Balance Karna",
+      "desc": "Word equation se balanced chemical equation tak",
+      "icon": "⚗️",
+      "xp": 25,
+      "difficulty": "easy",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Magnesium Ribbon Jalao — Reaction Dekho! 🔥",
+          "body": "Teacher ne Magnesium ribbon ko burner par jalaya.\n\nKya hua?\n• Dazzling white flame nikli!\n• Ek white powder (Magnesium Oxide) bani\n• Nature aur identity BADAL GAYI!\n\nYeh ek CHEMICAL REACTION hai!\n\nKaise pehchanein ki reaction hui?\n✅ Change in colour\n✅ Change in state\n✅ Gas ka evolution\n✅ Temperature change\n✅ Precipitate bana"
+        },
+        {
+          "type": "concept",
+          "title": "Chemical Equation Kaise Likhein?",
+          "body": "**Step 1: Word Equation**\nMagnesium + Oxygen → Magnesium Oxide\n(Reactants)          (Product)\n\n**Step 2: Chemical Formula use karo**\nMg + O₂ → MgO  ← Skeletal equation (unbalanced!)\n\n**Step 3: Balance karo** (Law of Conservation of Mass)\n2Mg + O₂ → 2MgO  ← Balanced! ✅\n\n**Rule:** Atoms of each element must be EQUAL on both sides!\n\n**Physical states (optional but informative):**\n(s) = solid, (l) = liquid, (g) = gas, (aq) = aqueous solution"
+        },
+        {
+          "type": "visual",
+          "visualId": "balancing-steps",
+          "title": "Equation Balancing — Step by Step! (NCERT Example)",
+          "intro": "Fe + H₂O → Fe₃O₄ + H₂ ko balance karte hain. Har step dekho!"
+        },
+        {
+          "type": "example",
+          "title": "NCERT Activity — Zn + H₂SO₄ Already Balanced!",
+          "question": "Zn + H₂SO₄ → ZnSO₄ + H₂ — verify karo ki yeh balanced hai ya nahi?",
+          "steps": [
+            {
+              "num": "1",
+              "text": "Zn: LHS=1, RHS=1 ✅"
+            },
+            {
+              "num": "2",
+              "text": "H: LHS=2, RHS=2 ✅"
+            },
+            {
+              "num": "3",
+              "text": "S: LHS=1, RHS=1 ✅"
+            },
+            {
+              "num": "4",
+              "text": "O: LHS=4, RHS=4 ✅"
+            },
+            {
+              "num": "5",
+              "text": "Sab equal hain! Yeh ALREADY BALANCED hai! ✅"
+            }
+          ]
+        },
+        {
+          "type": "practice",
+          "title": "Balance Karo — Practice!",
+          "questions": [
+            {
+              "question": "Balance karo: H₂ + Cl₂ → HCl",
+              "answer": "H₂ + Cl₂ → 2HCl. H: LHS=2, RHS=2 ✅. Cl: LHS=2, RHS=2 ✅"
+            },
+            {
+              "question": "Balance karo: Na + H₂O → NaOH + H₂",
+              "answer": "2Na + 2H₂O → 2NaOH + H₂. Na:2=2 ✅, H:4=4 ✅, O:2=2 ✅"
+            },
+            {
+              "question": "3Fe(s) + 4H₂O(g) → Fe₃O₄(s) + 4H₂(g) mein physical states ka matlab kya hai?",
+              "answer": "(s)=solid, (g)=gas. H₂O par (g) hai kyunki yahan steam use hoti hai, liquid paani nahi!"
+            }
+          ]
+        },
+        {
+          "type": "remember",
+          "title": "Key Points — Yaad Rakhna! 🧠",
+          "points": [
+            "Chemical reaction pehchaan: colour/state change, gas evolution, temperature change, precipitate",
+            "Balanced equation: LHS aur RHS par har element ke atoms equal hone chahiye",
+            "Coefficient badhao, formula mat badlo (H₂O nahi H₂O₄)",
+            "Physical states: (s), (l), (g), (aq) — optional unless specified",
+            "Law of Conservation of Mass: atoms nahi bante nahi mitte"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "name": "Types of Chemical Reactions",
+      "desc": "Combination, Decomposition, Displacement, Double Displacement, Redox",
+      "icon": "🔬",
+      "xp": 35,
+      "difficulty": "medium",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Reactions Kitne Prakar Ki Hoti Hain? 🤔",
+          "body": "Ek iron nail ko copper sulphate solution mein daala → nail brown ho gayi, solution ka blue colour fade hua!\n\nEk beaker mein CaO + H₂O mila → beaker HOT ho gayi!\n\nBaSO₄ ka white precipitate ban gaya!\n\nSab alag-alag TYPE ki reactions hain!\n\nNCERT mein 5 main types hain:\n1️⃣ Combination\n2️⃣ Decomposition\n3️⃣ Displacement\n4️⃣ Double Displacement\n5️⃣ Oxidation-Reduction (Redox)"
+        },
+        {
+          "type": "visual",
+          "visualId": "reaction-types",
+          "title": "5 Types of Reactions — Interactive Guide!",
+          "intro": "Har type par click karo — equation, example aur trick dekho!"
+        },
+        {
+          "type": "concept",
+          "title": "Exothermic vs Endothermic",
+          "body": "**Exothermic Reactions** — Heat RELEASED 🔥\n• CaO + H₂O → Ca(OH)₂ + Heat\n• Respiration: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + Energy\n• Burning of natural gas\n• Compost decomposition\n\n**Endothermic Reactions** — Heat ABSORBED ❄️\n• Decomposition reactions (heat/light/electricity chahiye)\n• Thermal: CaCO₃ →(heat)→ CaO + CO₂\n• Electrolytic: 2H₂O →(electricity)→ 2H₂ + O₂\n• Photolytic: 2AgCl →(sunlight)→ 2Ag + Cl₂\n\n**Easy trick:** Exo = Exit (energy exit karta hai)"
+        },
+        {
+          "type": "example",
+          "title": "NCERT Activity 1.9 — Iron + Copper Sulphate",
+          "question": "Fe(s) + CuSO₄(aq) → FeSO₄(aq) + Cu(s). Yeh kaun si type ki reaction hai? Explain karo.",
+          "steps": [
+            {
+              "num": "1",
+              "text": "Iron nail brownish ho gayi → Cu deposit hua nail par"
+            },
+            {
+              "num": "2",
+              "text": "CuSO₄ solution ka blue colour fade hua → FeSO₄ bana (light green)"
+            },
+            {
+              "num": "3",
+              "text": "Iron ne Copper ko CuSO₄ se displace kiya"
+            },
+            {
+              "num": "4",
+              "text": "DISPLACEMENT REACTION ✅ — Fe is more reactive than Cu"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Redox Reaction — CuO + H₂",
+          "question": "CuO + H₂ →(heat)→ Cu + H₂O. Konsa oxidised hua, konsa reduced?",
+          "steps": [
+            {
+              "num": "1",
+              "text": "CuO → Cu: Oxygen LOSE kiya → REDUCTION hua (CuO reduced to Cu)"
+            },
+            {
+              "num": "2",
+              "text": "H₂ → H₂O: Oxygen GAIN kiya → OXIDATION hua (H₂ oxidised to H₂O)"
+            },
+            {
+              "num": "3",
+              "text": "Ek hi reaction mein dono hue → REDOX reaction!"
+            },
+            {
+              "num": "4",
+              "text": "Trick: OIL RIG — Oxidation Is Loss, Reduction Is Gain (of electrons/oxygen)"
+            }
+          ]
+        },
+        {
+          "type": "practice",
+          "title": "Reaction Type Identify Karo",
+          "questions": [
+            {
+              "question": "Na₂SO₄(aq) + BaCl₂(aq) → BaSO₄(s) + 2NaCl(aq) — Type kya hai?",
+              "answer": "Double Displacement! Ions exchange hue: SO₄²⁻ aur Ba²⁺ mile → BaSO₄ precipitate bana. Yeh precipitation reaction bhi hai!"
+            },
+            {
+              "question": "2H₂(g) + O₂(g) → 2H₂O(l) — Type kya hai? Exo ya Endo?",
+              "answer": "Combination reaction (2+ reactants → 1 product). Exothermic (heat released — paani bante waqt energy nikti hai)"
+            },
+            {
+              "question": "2AgCl(s) →(sunlight)→ 2Ag(s) + Cl₂(g) — Type kya hai? Photography mein kaise use hoti hai?",
+              "answer": "Decomposition reaction (photolytic — sunlight se). Black & white photography mein AgBr use hota hai. Light se Ag metal banta hai → image ban ti hai!"
+            }
+          ]
+        },
+        {
+          "type": "remember",
+          "title": "5 Types Quick Revision 🏆",
+          "points": [
+            "Combination: A + B → AB (2+ → 1). Mostly exothermic",
+            "Decomposition: AB → A + B (1 → 2+). Mostly endothermic",
+            "Displacement: A + BC → AC + B (more reactive displaces less reactive)",
+            "Double Displacement: AB + CD → AD + CB (ion exchange, precipitate banta hai)",
+            "Redox: ek oxidise hota hai, doosra reduce — simultaneous! OIL RIG yaad karo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "name": "Corrosion aur Rancidity",
+      "desc": "Oxidation ke daily life effects",
+      "icon": "🦀",
+      "xp": 20,
+      "difficulty": "easy",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Iron Kyun Rust Karta Hai? 🔴",
+          "body": "Naya iron nail → shiny!\n3 din baad → reddish brown powder!\n\nYeh CORROSION hai — metal ka atmospheric agents (moisture, acids) se react karna.\n\nAur woh chips jo khaane ke baad kharab smell aati hai?\nFats/oils ka OXIDATION ho jaata hai → RANCIDITY!\n\nDono mein common: OXIDATION ki wajah se nuksan!\n\nIn effects se bachne ke liye hum kya karte hain?"
+        },
+        {
+          "type": "concept",
+          "title": "Corrosion — Types aur Prevention",
+          "body": "**Corrosion kya hai?**\nMetal + atmospheric substances → corrosion products\n\n**Examples:**\n• Iron + O₂ + H₂O → Fe₂O₃.xH₂O (Rust — reddish brown)\n• Silver → Ag₂S (black coating — tarnish)\n• Copper → Cu(OH)₂.CuCO₃ (green coating — verdigris)\n\n**Prevention methods:**\n✅ Paint lagao (iron articles)\n✅ Galvanization (zinc coating)\n✅ Alloying (stainless steel)\n✅ Oil/grease lagao\n\n**Damage:** Car bodies, bridges, railings, ships — every year enormous money wasted!"
+        },
+        {
+          "type": "concept",
+          "title": "Rancidity — Food Kharab Kyun Hota Hai?",
+          "body": "**Rancidity kya hai?**\nFats + Oils + O₂ → oxidized products (bad smell, taste)\n\n**Prevention methods:**\n✅ Antioxidants add karo (BHA, Vitamin E)\n✅ Airtight containers mein rakho\n✅ Nitrogen gas flush (chips bags!) — N₂ inert hai, oxidation nahi hogi\n✅ Refrigerator mein rakho\n✅ Dark bottles mein (light bhi oxidation karti hai)\n\n**Do you know?** Chips manufacturers bags ko N₂ gas se flush karte hain! Isliye bags hamesha kuch phule hue lagte hain."
+        },
+        {
+          "type": "practice",
+          "title": "Corrosion aur Rancidity Practice",
+          "questions": [
+            {
+              "question": "Silver ke upar black coating kyun hoti hai? Green coating copper par kyun?",
+              "answer": "Silver + air/H₂S → Ag₂S (black tarnish). Copper + CO₂ + H₂O → Cu(OH)₂.CuCO₃ (green verdigris). Dono corrosion ke examples hain!"
+            },
+            {
+              "question": "Oil aur fat wale food mein nitrogen kyun bharte hain?",
+              "answer": "Nitrogen inert gas hai — oxygen se react nahi karta. N₂ se oxidation prevent hoti hai → rancidity nahi hoti → food fresh rehta hai!"
+            },
+            {
+              "question": "Element X shiny brown hai. Heat karne par black ho jaata hai. X kya hai aur black compound kya bana?",
+              "answer": "X = Copper (Cu). 2Cu + O₂ →(heat)→ 2CuO (black copper oxide). Yeh oxidation reaction + combination reaction hai!"
+            }
+          ]
+        },
+        {
+          "type": "remember",
+          "title": "Corrosion aur Rancidity — Final Points",
+          "points": [
+            "Corrosion = metal oxidation in atmosphere. Iron = rust (red), Silver = tarnish (black), Copper = verdigris (green)",
+            "Prevention: paint, galvanization, alloying, greasing",
+            "Rancidity = fat/oil oxidation → bad smell/taste",
+            "Rancidity prevention: antioxidants, airtight containers, N₂ flush, refrigeration",
+            "Chips ka phula hua bag = N₂ gas! Not air!"
+          ]
+        }
+      ]
+    }
+  ],
+  "quizSets": [
+    {
+      "setId": "setA",
+      "name": "Set A — Basic Concepts",
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Kaunsa observation indicate karta hai ki chemical reaction hui hai?",
+          "options": [
+            "Colour change",
+            "Shape change",
+            "Size change",
+            "Position change"
+          ],
+          "correctIndex": 0,
+          "hint": "Chemical reactions mein substance ki nature/identity change hoti hai",
+          "explanation": "Colour change ek chemical change ka indicator hai. Shape/size/position = physical changes."
+        },
+        {
+          "id": "q2",
+          "question": "Fe + H₂O → Fe₃O₄ + H₂ ko balance karne ke baad Fe ka coefficient kya hoga?",
+          "options": [
+            "3",
+            "1",
+            "4",
+            "2"
+          ],
+          "correctIndex": 0,
+          "hint": "RHS par Fe₃O₄ mein 3 Fe atoms hain",
+          "explanation": "3Fe + 4H₂O → Fe₃O₄ + 4H₂. Fe: LHS=3, RHS=3 ✅. Isliye coefficient 3 hai!"
+        },
+        {
+          "id": "q3",
+          "question": "CaO(s) + H₂O(l) → Ca(OH)₂(aq) + Heat — yeh kaisi reaction hai?",
+          "options": [
+            "Combination + Exothermic",
+            "Decomposition + Endothermic",
+            "Displacement + Exothermic",
+            "Redox"
+          ],
+          "correctIndex": 0,
+          "hint": "CaO + H₂O → ek product bana. Heat release hua.",
+          "explanation": "2 reactants → 1 product = Combination. Heat release = Exothermic. Quick lime + water = slaked lime!"
+        },
+        {
+          "id": "q4",
+          "question": "2AgCl →(sunlight)→ 2Ag + Cl₂ — energy ka form kya hai?",
+          "options": [
+            "Light (photolytic)",
+            "Heat (thermal)",
+            "Electricity (electrolytic)",
+            "None"
+          ],
+          "correctIndex": 0,
+          "hint": "Sunlight = light energy. Yeh photolytic decomposition hai",
+          "explanation": "Sunlight se decomposition = photolytic. Thermal decomposition = heat. Electrolytic = electricity. AgCl → black & white photography!"
+        },
+        {
+          "id": "q5",
+          "question": "Chips ke bags mein kaunsi gas bharte hain aur kyun?",
+          "options": [
+            "Nitrogen — oxidation rokne ke liye",
+            "Oxygen — freshness ke liye",
+            "CO₂ — preservation ke liye",
+            "Hydrogen — flavour ke liye"
+          ],
+          "correctIndex": 0,
+          "hint": "Inert gas chahiye jo fats ko oxidize na kare",
+          "explanation": "N₂ = inert gas. Fats + O₂ → rancidity. N₂ se O₂ hata dete hain → chips fresh rehti hain!"
+        }
+      ]
+    },
+    {
+      "setId": "setB",
+      "name": "Set B — Reactions",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Fe(s) + CuSO₄(aq) → FeSO₄(aq) + Cu(s) — yeh kaisi reaction hai?",
+          "options": [
+            "Displacement",
+            "Combination",
+            "Double Displacement",
+            "Decomposition"
+          ],
+          "correctIndex": 0,
+          "hint": "Fe ne Cu ko CuSO₄ se nikaala",
+          "explanation": "Iron more reactive than copper → Fe displaces Cu from CuSO₄. Iron nail brown (Cu deposit) aur blue solution fade (FeSO₄)."
+        },
+        {
+          "id": "q2",
+          "question": "Na₂SO₄ + BaCl₂ → BaSO₄(s) + 2NaCl — kaunsi type ki reaction hai?",
+          "options": [
+            "Double Displacement (Precipitation)",
+            "Single Displacement",
+            "Combination",
+            "Redox"
+          ],
+          "correctIndex": 0,
+          "hint": "Ions exchange hue — BaSO₄ precipitate bana",
+          "explanation": "SO₄²⁻ + Ba²⁺ → BaSO₄ (white precipitate). Na⁺ + Cl⁻ → NaCl (in solution). Ion exchange = double displacement!"
+        },
+        {
+          "id": "q3",
+          "question": "CuO + H₂ → Cu + H₂O mein konsa substance oxidised hua?",
+          "options": [
+            "H₂",
+            "CuO",
+            "Cu",
+            "H₂O"
+          ],
+          "correctIndex": 0,
+          "hint": "Oxidation = oxygen gain (ya hydrogen loss)",
+          "explanation": "H₂ → H₂O: Hydrogen gained oxygen = OXIDISED. CuO → Cu: Copper oxide lost oxygen = REDUCED. Redox reaction!"
+        },
+        {
+          "id": "q4",
+          "question": "2FeSO₄(s) →(heat)→ Fe₂O₃ + SO₂ + SO₃ — kaisi reaction hai?",
+          "options": [
+            "Thermal Decomposition",
+            "Combination",
+            "Displacement",
+            "Photolytic Decomposition"
+          ],
+          "correctIndex": 0,
+          "hint": "Heat se single reactant → multiple products",
+          "explanation": "1 reactant (FeSO₄) → 3 products. Heat se hui = thermal decomposition. Green FeSO₄ crystals → Fe₂O₃ (reddish brown)."
+        },
+        {
+          "id": "q5",
+          "question": "2Pb(NO₃)₂ →(heat)→ 2PbO + 4NO₂ + O₂. Brown fumes of which gas?",
+          "options": [
+            "NO₂ (Nitrogen Dioxide)",
+            "O₂ (Oxygen)",
+            "N₂O (Nitrous Oxide)",
+            "N₂ (Nitrogen)"
+          ],
+          "correctIndex": 0,
+          "hint": "Brown fumes = which oxide of nitrogen?",
+          "explanation": "NO₂ = brown fumes. Lead nitrate heating → lead oxide (yellow) + brown NO₂ gas + O₂. Thermal decomposition!"
+        }
+      ]
+    },
+    {
+      "setId": "setC",
+      "name": "Set C — Board Level",
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "2PbO(s) + C(s) → 2Pb(s) + CO₂(g) — konsa substance reduced hua?",
+          "options": [
+            "PbO (lead oxide)",
+            "C (carbon)",
+            "Pb (lead)",
+            "CO₂"
+          ],
+          "correctIndex": 0,
+          "hint": "Reduction = oxygen loss. Kaun oxygen lose kar raha hai?",
+          "explanation": "PbO → Pb: Lead oxide LOST oxygen = REDUCED. C → CO₂: Carbon GAINED oxygen = OXIDISED. Redox reaction. Answer: (a) and (b) are incorrect in NCERT exercise (Lead IS reduced, CO₂ is NOT oxidised)"
+        },
+        {
+          "id": "q2",
+          "question": "Fe₂O₃ + 2Al → Al₂O₃ + 2Fe — yeh kaun si reaction hai?",
+          "options": [
+            "Displacement + Redox",
+            "Combination",
+            "Double Displacement",
+            "Decomposition"
+          ],
+          "correctIndex": 0,
+          "hint": "Al ne Fe ko Fe₂O₃ se displace kiya. Al oxidised, Fe₂O₃ reduced.",
+          "explanation": "Al more reactive than Fe → displaces Fe. Thermite reaction! Also redox: Al gains O (oxidised), Fe₂O₃ loses O (reduced). Used in welding railway tracks!"
+        },
+        {
+          "id": "q3",
+          "question": "Balance karo: HNO₃ + Ca(OH)₂ → Ca(NO₃)₂ + H₂O. H₂O ka coefficient?",
+          "options": [
+            "2",
+            "1",
+            "3",
+            "4"
+          ],
+          "correctIndex": 0,
+          "hint": "NO₃: Ca(NO₃)₂ mein 2 groups → 2HNO₃. Phir H balance karo.",
+          "explanation": "2HNO₃ + Ca(OH)₂ → Ca(NO₃)₂ + 2H₂O. N:2=2✅, Ca:1=1✅, H:4=4✅, O:8=8✅. H₂O ka coefficient = 2!"
+        },
+        {
+          "id": "q4",
+          "question": "Whitewashing mein Ca(OH)₂ + CO₂ → CaCO₃ + H₂O reaction hoti hai. Marble ka formula?",
+          "options": [
+            "CaCO₃",
+            "CaO",
+            "Ca(OH)₂",
+            "CaCl₂"
+          ],
+          "correctIndex": 0,
+          "hint": "Whitewashing ke 2-3 din baad CaCO₃ banta hai...",
+          "explanation": "CaCO₃ = Calcium Carbonate = Marble ka formula bhi! Isliye whitewashed walls shiny ho jaati hain. Interesting fact from NCERT!"
+        },
+        {
+          "id": "q5",
+          "question": "Electrolysis mein 2H₂O → 2H₂ + O₂. Hydrogen cathode par kyu collect hoti hai?",
+          "options": [
+            "H⁺ ions cathode (−) par reduce hote hain",
+            "H⁺ ions anode (+) par jaate hain",
+            "O₂ cathode par banti hai",
+            "H₂O directly split hoti hai"
+          ],
+          "correctIndex": 0,
+          "hint": "Cathode = negative electrode. Positive ions kahan jaayenge?",
+          "explanation": "H⁺ (positive) → cathode (negative) → 2H⁺ + 2e⁻ → H₂. O²⁻ → anode (positive) → oxidised → O₂. Volume ratio H₂:O₂ = 2:1!"
+        }
+      ]
+    }
+  ]
+}

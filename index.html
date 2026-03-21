@@ -450,12 +450,11 @@ body{font-family:'Hind',sans-serif;background:var(--bg);color:var(--txt);min-hei
 
 <script>
 // ════════════════════════════════════════════════
-//  CONFIG — GitHub Pages URL yahan daalo
+//  CONFIG — Auto-detect karta hai URL
 // ════════════════════════════════════════════════
-// IMPORTANT: Jab GitHub par deploy karo toh yeh URL apni repo ki URL se replace karna:
-// Example: 'https://username.github.io/gyaan-arena'
-// Local testing ke liye: '' (empty string — relative paths use honge)
-const BASE_URL = '';
+// GitHub Pages par automatically sahi URL use karega
+// Local testing par bhi kaam karega
+const BASE_URL = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '');
 
 // ════════════════════════════════════════════════
 //  STATE
@@ -509,9 +508,11 @@ function toast(msg, good=true) {
 //  DATA LOADING
 // ════════════════════════════════════════════════
 async function fetchJSON(path) {
-  const url = BASE_URL ? `${BASE_URL}/${path}` : path;
+  // Clean up double slashes
+  const url = (BASE_URL + '/' + path).replace(/([^:])\/\/+/g, '$1/');
+  console.log('Fetching:', url);
   const res = await fetch(url);
-  if (!res.ok) throw new Error(`Failed: ${url}`);
+  if (!res.ok) throw new Error(`HTTP ${res.status}: ${url}`);
   return res.json();
 }
 
@@ -528,25 +529,29 @@ async function loadChapter(subjId, chId) {
 // ════════════════════════════════════════════════
 async function init() {
   try {
+    console.log('App starting... BASE_URL =', BASE_URL);
     const data = await fetchJSON('subjects.json');
+    console.log('subjects.json loaded:', data.subjects.length, 'subjects');
     G.subjects = data.subjects;
     G.currentSubj = G.subjects[0].id;
     SS('splash');
   } catch(e) {
-    // Fallback if no server (direct file open)
+    console.error('Init failed:', e);
     document.getElementById('loading').innerHTML = `
-      <div style="padding:2rem;text-align:center;max-width:340px;">
-        <div style="font-size:2rem;margin-bottom:.8rem;">⚠️</div>
-        <div style="font-family:'Baloo 2',cursive;font-size:1.1rem;font-weight:800;margin-bottom:.6rem;">Server Needed!</div>
-        <div style="font-size:.83rem;color:var(--sub);line-height:1.7;margin-bottom:1rem;">
-          Yeh app directly file open karke nahi chalti.<br><br>
-          <strong>Option 1 — Local:</strong><br>
-          Terminal mein jaake run karo:<br>
-          <code style="background:rgba(255,255,255,.08);padding:.3rem .6rem;border-radius:6px;font-size:.8rem;">python -m http.server 8000</code><br>
-          Phir browser mein: <code style="background:rgba(255,255,255,.08);padding:.2rem .5rem;border-radius:6px;">localhost:8000</code><br><br>
-          <strong>Option 2 — Online:</strong><br>
-          GitHub Pages par deploy karo (guide dekho)
+      <div style="padding:2rem;text-align:center;max-width:360px;">
+        <div style="font-size:2.5rem;margin-bottom:.8rem;">⚠️</div>
+        <div style="font-family:'Baloo 2',cursive;font-size:1.1rem;font-weight:800;margin-bottom:.6rem;color:var(--p);">File Load Nahi Hua!</div>
+        <div style="font-size:.82rem;color:var(--sub);line-height:1.7;margin-bottom:1rem;text-align:left;background:var(--card);padding:.9rem;border-radius:12px;">
+          <strong>Error:</strong> ${e.message}<br><br>
+          <strong>Check karo:</strong><br>
+          1. subjects.json root folder mein hai?<br>
+          2. content/maths/ch02.json sahi path mein hai?<br>
+          3. GitHub Pages enable hua? (Settings → Pages)
         </div>
+        <div style="font-size:.78rem;color:var(--sub);background:var(--card2);padding:.7rem;border-radius:10px;font-family:monospace;text-align:left;word-break:break-all;">
+          Trying: ${BASE_URL}/subjects.json
+        </div>
+        <button onclick="location.reload()" style="margin-top:1rem;background:var(--p);color:white;border:none;padding:.7rem 1.5rem;border-radius:10px;cursor:pointer;font-family:'Hind',sans-serif;font-weight:700;">🔄 Reload</button>
       </div>`;
   }
 }

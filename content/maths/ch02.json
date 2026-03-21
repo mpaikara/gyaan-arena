@@ -98,30 +98,33 @@
           "body": "Jab hum y = p(x) ka graph draw karte hain — jahan bhi yeh curve x-axis ko KAATTA hai (yahan y = 0 hota hai) — wahan ka x-value ek ZERO hai!\n\nLinear y = ax + b → Ek seedhi line → Exactly 1 zero\nQuadratic y = ax² + bx + c → Parabola (U shape ya ∩ shape) → 0, 1, ya 2 zeroes\nCubic y = ax³ + bx² + cx + d → S-shaped curve → atmost 3 zeroes\n\nYeh NCERT ka sabse important geometrical connection hai!"
         },
         {
-          "type": "concept",
-          "title": "Linear Polynomial — Straight Line",
-          "body": "y = ax + b (a ≠ 0) → STRAIGHT LINE\n\nLine exactly EK point par x-axis se milti hai: (–b/a, 0)\n\nExample: y = 2x + 3\n• x = –2 par y = –1, x = 2 par y = 7\n• Graph point (–3/2, 0) par x-axis kaatta hai\n• Zero = –3/2 = –b/a ✅\n\n**Rule: Linear polynomial mein EXACTLY 1 zero hota hai!**"
+          "type": "visual",
+          "visualId": "linear-graph",
+          "title": "Linear Polynomial — Straight Line Graph",
+          "intro": "y = ax + b ka graph ek seedhi line hoti hai. Slider chalao aur dekho zero kaise change hota hai!"
         },
         {
           "type": "concept",
           "title": "Quadratic Polynomial — Parabola ke 3 Cases",
-          "body": "y = ax² + bx + c → PARABOLA\n• a > 0 → ∪ shape (upward)\n• a < 0 → ∩ shape (downward)\n\n**Case 1:** Parabola x-axis ko 2 distinct points A, A' par kaate\n→ 2 DISTINCT zeroes (x-coordinates of A aur A')\n\n**Case 2:** Parabola x-axis ko exactly 1 point par chhuye (tangent)\n→ 2 EQUAL zeroes (ek hi zero, repeated)\n\n**Case 3:** Parabola x-axis ko KABHI nahi kaate\n→ NO real zeroes\n\n**Rule: Quadratic mein ATMOST 2 zeroes!**"
+          "body": "y = ax² + bx + c → PARABOLA\n• a > 0 → ∪ shape (upward)\n• a < 0 → ∩ shape (downward)\n\n**Case 1:** Parabola x-axis ko 2 distinct points A, A' par kaate\n→ 2 DISTINCT zeroes\n\n**Case 2:** Parabola x-axis ko exactly 1 point par chhuye (tangent)\n→ 2 EQUAL zeroes (repeated)\n\n**Case 3:** Parabola x-axis ko KABHI nahi kaate\n→ NO real zeroes\n\n**Rule: Quadratic mein ATMOST 2 zeroes!**"
         },
         {
-          "type": "example",
-          "title": "NCERT Example: y = x² – 3x – 4 ka Table",
-          "question": "y = x² – 3x – 4 ke liye x = –2, –1, 0, 1, 2, 3, 4, 5 par values nikalo.",
-          "steps": [
-            { "num": "1", "text": "x=–2: 4+6–4=6 | x=–1: 1+3–4=0 ✅ | x=0: –4 | x=1: –6" },
-            { "num": "2", "text": "x=2: –6 | x=3: –4 | x=4: 16–12–4=0 ✅ | x=5: 6" },
-            { "num": "3", "text": "Zero at x=–1 aur x=4 → Graph x-axis ko in 2 points par kaatta hai" },
-            { "num": "4", "text": "a=1 > 0 → ∪ shape parabola. Case 1 (2 distinct zeroes) ✅" }
-          ]
+          "type": "visual",
+          "visualId": "parabola-table",
+          "title": "y = x² – 3x – 4 — Parabola aur Table (NCERT Fig 2.2)",
+          "intro": "NCERT ka exact example! Table mein dekho kahan y = 0 hai — wahi zeroes hain."
         },
         {
-          "type": "concept",
-          "title": "Cubic Polynomial — S-Shaped Curve",
-          "body": "y = x³ – 4x ke liye table:\nx = –2, –1, 0, 1, 2\ny = 0, 3, 0, –3, 0\n\nZeroes: –2, 0, 2 (3 distinct zeroes)\nGraph x-axis ko 3 points par kaatta hai!\n\n**y = x³** → Sirf ek zero: x = 0\n**y = x³ – x²** = x²(x–1) → Zeroes: 0 (repeated) aur 1\n\n**General Rule: Polynomial of degree n → atmost n zeroes**"
+          "type": "visual",
+          "visualId": "three-cases",
+          "title": "Parabola ke Teen Cases — Interactive (NCERT Fig 2.3, 2.4, 2.5)",
+          "intro": "Buttons dabao aur teeno cases dekho — 2 zeroes, 1 zero, ya 0 zeroes!"
+        },
+        {
+          "type": "visual",
+          "visualId": "cubic-graph",
+          "title": "Cubic Polynomial — S-Shaped Curve (NCERT Fig 2.6)",
+          "intro": "y = x³ – 4x ka graph. Dekho kahan-kahan x-axis ko kaatta hai — 3 zeroes!"
         },
         {
           "type": "practice",

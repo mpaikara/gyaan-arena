@@ -128,9 +128,9 @@
         {
           "id": "ch01",
           "name": "Chemical Reactions and Equations",
-          "topics": 0,
-          "quizSets": 0,
-          "status": "coming"
+          "topics": 3,
+          "quizSets": 3,
+          "status": "ready"
         },
         {
           "id": "ch02",

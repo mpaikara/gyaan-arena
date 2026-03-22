@@ -381,8 +381,9 @@ input[type=range]{width:100%;accent-color:var(--purple);}
     <div class="t-wrap">
       <div class="t-hd">
         <div class="t-av">🤖</div>
-        <div><div class="t-nm">Gyaani Bhai</div><div class="t-st">AI Math Teacher</div></div>
+        <div><div class="t-nm">Gyaani Bhai</div><div class="t-st">AI Tutor — Maths &amp; Science</div></div>
         <div class="t-ol"><div class="odot"></div>Online</div>
+        <button onclick="showApiKeyModal()" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:.25rem .55rem;color:rgba(255,255,255,.5);font-size:.7rem;cursor:pointer;margin-left:auto;" title="API Key settings">🔑</button>
       </div>
       <div class="chat-area" id="chat-area"></div>
       <div class="qk-row" id="qk-row"></div>
@@ -392,6 +393,26 @@ input[type=range]{width:100%;accent-color:var(--purple);}
           <button class="snd-btn" onclick="sendMsg()">➤</button>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- API Key Modal -->
+  <div id="api-modal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.75);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:1.2rem;" onclick="if(event.target===this)hideApiModal()">
+    <div style="background:#1a1a2e;border:1px solid rgba(255,107,53,.3);border-radius:16px;padding:1.4rem;width:100%;max-width:380px;box-shadow:0 20px 60px rgba(0,0,0,.6);">
+      <div style="font-size:1.3rem;font-weight:800;margin-bottom:.4rem;">🔑 API Key Daalo</div>
+      <div style="font-size:.82rem;color:rgba(255,255,255,.55);margin-bottom:1rem;line-height:1.5;">Gyaani Bhai ke liye Anthropic API key chahiye.<br>Yeh sirf tumhare browser mein save hogi — kisi ko share nahi hogi.</div>
+      <div style="font-size:.78rem;color:rgba(255,107,53,.8);background:rgba(255,107,53,.08);border:1px solid rgba(255,107,53,.2);border-radius:8px;padding:.6rem .8rem;margin-bottom:.9rem;line-height:1.5;">
+        <strong>Free key kaise milegi:</strong><br>
+        1. <a href="https://console.anthropic.com/" target="_blank" style="color:var(--p);">console.anthropic.com</a> par jao<br>
+        2. Sign up → API Keys → Create Key<br>
+        3. Key copy karke neeche paste karo
+      </div>
+      <input type="password" id="api-key-inp" placeholder="sk-ant-api03-..." style="width:100%;box-sizing:border-box;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:.7rem .9rem;color:white;font-size:.85rem;margin-bottom:.7rem;outline:none;" />
+      <div style="display:flex;gap:.6rem;">
+        <button onclick="saveApiKey()" style="flex:1;background:linear-gradient(135deg,#FF6B35,#FF8C5A);border:none;border-radius:10px;padding:.75rem;color:white;font-weight:700;font-size:.9rem;cursor:pointer;">Save Karo ✅</button>
+        <button onclick="hideApiModal()" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:.75rem 1rem;color:rgba(255,255,255,.6);cursor:pointer;">Baad mein</button>
+      </div>
+      <div id="api-key-status" style="margin-top:.6rem;font-size:.78rem;text-align:center;min-height:1rem;"></div>
     </div>
   </div>
 
@@ -539,7 +560,7 @@ function sTab(name) {
   });
   document.getElementById('t-' + name).classList.add('on');
   document.getElementById('nb-' + name).classList.add('on');
-  if(name === 'tutor') { renderChat(); renderQuickBtns(); }
+  if(name === 'tutor') { renderChat(); renderQuickBtns(); checkApiKeyOnTutorOpen(); }
   if(name === 'prog') renderProgress();
   if(name === 'practice') renderPracticeTab();
   if(name === 'home') renderHome();
@@ -1045,20 +1066,125 @@ function renderPracticeTab() {
 }
 
 // ════════════════════════════════════════════════
-//  AI TUTOR
+//  AI TUTOR — Claude API (Anthropic)
 // ════════════════════════════════════════════════
-const KB = {
-  'polynomial|poly|zeroes|coeffici': `📊 **Polynomial Guide**\n\nTypes: Linear (deg 1), Quadratic (deg 2), Cubic (deg 3)\n\n🔑 For ax²+bx+c:\nα+β = -b/a (sum)\nαβ = c/a (product)\n\nPolynomial from zeroes:\nx² - (sum)x + (product) = 0`,
-  'euclid|hcf|lcm|prime factor': `🔢 **Real Numbers**\n\nHCF: common primes ki smallest powers\nLCM: all primes ki largest powers\nHCF×LCM = a×b (sirf 2 numbers!)\n\nEuclid: a=bq+r (jab r=0, b=HCF)`,
-  'irrational|rational|sqrt|proof': `🔍 **Irrational Proof**\n\n√2 irrational: Assume p/q coprime → contradiction!\nRules:\n• Rational±Irrational = Irrational\n• NonzeroRational×Irrational = Irrational`,
-  'quadratic|discriminant|roots|formula': `🔳 **Quadratic Equations**\n\nFormula: x = [-b±√(b²-4ac)]/2a\n\nD = b²-4ac:\n• D>0 → 2 distinct real roots\n• D=0 → 2 equal roots\n• D<0 → No real roots\n\nFactorisation: middle term split karo`,
-  'ap|arithmetic progression|nth term|sum': `📈 **Arithmetic Progressions**\n\naₙ = a+(n-1)d\nSₙ = n/2[2a+(n-1)d]\nSₙ = n/2(first+last)\n\naₙ = Sₙ - Sₙ₋₁`,
-  'linear equation|substitution|elimination|consistent': `📏 **Linear Equations**\n\na₁/a₂≠b₁/b₂ → Unique solution\na₁/a₂=b₁/b₂=c₁/c₂ → Infinite\na₁/a₂=b₁/b₂≠c₁/c₂ → No solution\n\nSubstitution: coefficient 1 wala\nElimination: equal coefficients banao`,
-  'triangle|similar|bpt|pythagoras': `△ **Triangles**\n\nBPT: DE∥BC → AD/DB=AE/EC\nSimilarity: AA, SSS, SAS\nPythagoras: c²=a²+b²\nTriplets: 3-4-5, 5-12-13`,
-  'trigonometry|sin|cos|tan': `📐 **Trigonometry**\n\nsin=Opp/Hyp, cos=Adj/Hyp, tan=Opp/Adj\n30°: 1/2, √3/2, 1/√3\n45°: 1/√2, 1/√2, 1\n60°: √3/2, 1/2, √3\nIdentity: sin²+cos²=1`,
-  'probability|card|dice|coin': `🎲 **Probability**\n\nP(E) = Favorable/Total\nP(E)+P(Ē)=1\nCards=52: P(King)=4/52, P(Heart)=13/52`,
-  'statistic|mean|median|mode': `📊 **Statistics**\n\nMean = Σfx/Σf\nMedian = l+[(n/2-cf)/f]×h\nMode = l+[(f₁-f₀)/(2f₁-f₀-f₂)]×h`,
-};
+
+// ── API Key — localStorage se load hoti hai (code mein nahi hoti!) ──
+// Key sirf user ke browser mein save hoti hai — GitHub par nahi jaati
+function getApiKey() {
+  return localStorage.getItem('gyaan_arena_api_key') || '';
+}
+function setApiKey(key) {
+  localStorage.setItem('gyaan_arena_api_key', key.trim());
+}
+
+const GYAANI_SYSTEM = `Tu "Gyaani Bhai" hai — Class 10 CBSE ka ek friendly AI tutor jo Hinglish mein padhata hai.
+
+Teri style:
+- Hinglish mein baat kar (Hindi + English mix) — bilkul natural, jaise ek bada bhai samjhata ho
+- Simple, clear explanations do — complicated words avoid karo
+- CBSE Class 10 syllabus focus rakho
+- Replies short rakho — 150 words max (jab tak complex topic na ho)
+- Emojis use karo jaise 📚 🧪 🔬 📐 🧮 etc.
+- Formulas clearly likho
+- Agar student galat answer de toh gently correct karo
+- Encouraging raho — "Bilkul sahi!", "Acha sawaal hai!", "Almost correct!" etc.
+
+Subjects:
+- Maths (Class 10): Real Numbers, Polynomials, Linear Equations, Quadratic Equations, AP, Triangles, Coordinate Geometry, Trigonometry, Circles, Statistics, Probability
+- Science (Class 10): Chemical Reactions, Acids Bases Salts, Metals Non-metals, Carbon Compounds, Life Processes, Control & Coordination, Reproduction, Heredity, Light, Human Eye, Electricity, Magnetism, Environment
+- Social Science aur English mein bhi help kar
+
+Agar koi off-topic sawaal aaye toh politely padhai ki taraf redirect karo.`;
+
+// API call function — Anthropic Claude
+async function callClaudeAPI(userMessage) {
+  const ANTHROPIC_API_KEY = getApiKey();
+  if (!ANTHROPIC_API_KEY) {
+    showApiKeyModal();
+    return null;
+  }
+
+  // Last 10 messages ka history banao (context ke liye)
+  const history = G.chatMsgs.slice(-10).map(m => ({
+    role: m.bot ? 'assistant' : 'user',
+    content: m.t
+  }));
+  // Last message already added hoga — remove karo (double nahi chahiye)
+  if (history.length > 0 && history[history.length - 1].role === 'user') {
+    history.pop();
+  }
+
+  try {
+    const response = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': ANTHROPIC_API_KEY,
+        'anthropic-version': '2023-06-01',
+        'anthropic-dangerous-direct-browser-access': 'true'
+      },
+      body: JSON.stringify({
+        model: 'claude-haiku-4-5-20251001',
+        max_tokens: 400,
+        system: GYAANI_SYSTEM,
+        messages: [
+          ...history,
+          { role: 'user', content: userMessage }
+        ]
+      })
+    });
+
+    if (!response.ok) {
+      const err = await response.json().catch(() => ({}));
+      if (response.status === 401) return '❌ API key galat hai ya expire ho gayi.\n\nhttps://console.anthropic.com/ se naya key lo aur index.html update karo!';
+      if (response.status === 429) return '⏳ Bahut zyada requests ho gayi thodi der mein!\n\nEk minute baad dobara try karo. 🙏';
+      return `❌ Error ${response.status}: ${err.error?.message || 'Kuch galat hua'} — thodi der baad try karo!`;
+    }
+
+    const data = await response.json();
+    return data.content?.[0]?.text || 'Koi response nahi aaya — dobara try karo!';
+  } catch (e) {
+    if (e.name === 'TypeError' && e.message.includes('fetch')) {
+      return '🌐 Network error! Internet connection check karo aur dobara try karo.';
+    }
+    return '❌ Kuch gadbad ho gayi: ' + e.message;
+  }
+}
+
+function showApiKeyModal() {
+  const m = document.getElementById('api-modal');
+  if(m) { m.style.display = 'flex'; }
+  // If key already exists, show it masked
+  const existing = getApiKey();
+  const inp = document.getElementById('api-key-inp');
+  if(inp && existing) inp.placeholder = 'Key already saved — naya daalo ya Cancel karo';
+}
+
+function hideApiModal() {
+  const m = document.getElementById('api-modal');
+  if(m) m.style.display = 'none';
+}
+
+function saveApiKey() {
+  const inp = document.getElementById('api-key-inp');
+  const status = document.getElementById('api-key-status');
+  const key = inp ? inp.value.trim() : '';
+  if(!key.startsWith('sk-ant-')) {
+    if(status) status.innerHTML = '<span style="color:#F85149;">❌ Valid key "sk-ant-" se shuru hoti hai</span>';
+    return;
+  }
+  setApiKey(key);
+  if(status) status.innerHTML = '<span style="color:#3FB950;">✅ Key save ho gayi! Gyaani Bhai ready hai 🎉</span>';
+  setTimeout(() => hideApiModal(), 1200);
+}
+
+// Check if key exists on tutor tab open
+function checkApiKeyOnTutorOpen() {
+  if(!getApiKey()) {
+    setTimeout(() => showApiKeyModal(), 400);
+  }
+}
 
 function renderChat() {
   const area = document.getElementById('chat-area');
@@ -1082,7 +1208,7 @@ function addMsg(isBot, text, scroll=true) {
 function renderQuickBtns() {
   const el = document.getElementById('qk-row');
   if(!el) return;
-  const qs = ['Polynomial zeroes formula','AP nth term','Quadratic formula','HCF LCM method','Irrational proof','Trigonometry values','Probability cards','Statistics mean'];
+  const qs = ['Polynomial zeroes formula','Acid + Metal reaction','pH scale kya hai?','Quadratic formula','HCF LCM method','Photosynthesis explain karo','Trigonometry values','Statistics mean'];
   el.innerHTML = '';
   qs.forEach(q => {
     const b = document.createElement('button');
@@ -1103,14 +1229,18 @@ function askTutor(chName) {
 
 function ckKey(e) { if(e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMsg(); } }
 
-function sendMsg() {
+async function sendMsg() {
   const inp = document.getElementById('c-inp');
   const t = inp.value.trim();
   if(!t) return;
   inp.value = '';
+  inp.disabled = true;
+  document.querySelector('.snd-btn').disabled = true;
+
   G.chatMsgs.push({bot:false, t});
   addMsg(false, t);
 
+  // Typing indicator dikhao
   const area = document.getElementById('chat-area');
   const td = document.createElement('div');
   td.className = 'msg bot'; td.id = 'td-ind';
@@ -1118,20 +1248,20 @@ function sendMsg() {
   area.appendChild(td);
   area.scrollTop = area.scrollHeight;
 
-  setTimeout(() => {
-    const el = document.getElementById('td-ind');
-    if(el) el.remove();
-    const resp = getResp(t.toLowerCase());
-    G.chatMsgs.push({bot:true, t:resp});
-    addMsg(true, resp);
-  }, 700 + Math.random() * 500);
-}
+  // Claude API call karo
+  const resp = await callClaudeAPI(t);
 
-function getResp(text) {
-  for(const [keys, resp] of Object.entries(KB)) {
-    if(keys.split('|').some(k => text.includes(k))) return resp;
-  }
-  return `Samajh gaya! 🧠\n\nMujhe thoda aur batao kaunsa topic chahiye:\n\n📚 Maths: Polynomial, Real Numbers, AP, Quadratic, Linear Equations\n📐 Geometry: Triangles, Coordinate Geometry, Circles\n🔬 Science: Chapters aa rahe hain!\n\nSpecific sawaal poocho — main detail mein explain karunga!`;
+  // Typing indicator hatao
+  const el = document.getElementById('td-ind');
+  if(el) el.remove();
+
+  // Response dikhao
+  if(resp) { G.chatMsgs.push({bot:true, t:resp}); addMsg(true, resp); }
+
+  // Re-enable input
+  inp.disabled = false;
+  document.querySelector('.snd-btn').disabled = false;
+  inp.focus();
 }
 
 // ════════════════════════════════════════════════

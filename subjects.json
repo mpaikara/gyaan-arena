@@ -135,9 +135,9 @@
         {
           "id": "ch02",
           "name": "Acids, Bases and Salts",
-          "topics": 0,
-          "quizSets": 0,
-          "status": "coming"
+          "topics": 6,
+          "quizSets": 3,
+          "status": "ready"
         },
         {
           "id": "ch03",

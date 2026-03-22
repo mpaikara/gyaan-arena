@@ -1184,7 +1184,7 @@ async function loadVisualsForChapter(subjId, chId) {
   try {
     await new Promise((resolve, reject) => {
       const script = document.createElement('script');
-      script.src = url + '?v=1'; // cache bust
+      script.src = url + '?v=' + Date.now(); // cache bust — har baar fresh load
       script.onload = resolve;
       script.onerror = () => {
         console.warn(`No visuals file for ${key} — visual steps will be skipped`);

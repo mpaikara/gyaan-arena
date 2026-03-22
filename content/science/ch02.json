@@ -1,0 +1,742 @@
+{
+  "subject": "science",
+  "chapterId": "ch02",
+  "chapterNum": 2,
+  "name": "Acids, Bases and Salts",
+  "emoji": "🧪",
+  "color": "#3FB950",
+  "intro": "Nimbu khatta kyun hota hai? Soap haath mein phisalta kyun hai? Doodh mein curd kyun banta hai? Yeh sab Acids, Bases aur Salts ki kahaani hai! Is chapter mein hum inki duniya mein ghusenge — indicators se lekar pH scale tak, aur common salt se banane wali duniya tak!",
+  "topics": [
+    {
+      "id": "t1",
+      "name": "Acid-Base Indicators — Pehchaan Kaun!",
+      "desc": "Litmus, phenolphthalein, methyl orange aur natural indicators",
+      "icon": "🌿",
+      "xp": 20,
+      "difficulty": "easy",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Dadi Ki Rasoi Mein Science! 🍋",
+          "body": "Soch lo — ghar mein dadi khana bana rahi hain. Unhe indigestion ho gaya. \n\nKoi bola: 'Nimbu pani piyo!' \nKoi bola: 'Baking soda wala paani piyo!'\n\nTumhara Teacher pochta hai: Dono mein se kaun sahi hai?\n\nYeh question sunke tumhare mann mein aaya hoga — 'Ek khatta hai, ek pheeka — dono alag hain! Kaise ek dono kaam karega?'\n\n✅ Sahi answer: Baking soda (baking soda = base hai, jo excess acid ko neutralize karega)\n❌ Galat: Nimbu (nimbu mein acid hai — aur acid se acid neutralize nahi hota!)\n\nAb teacher bolta hai: 'Toh KAISE pata chalega koi cheez acid hai ya base hai?'\n\nYahi hai Is chapter ka pehla sawaal — aur iska jawaab hai INDICATORS! 🔍"
+        },
+        {
+          "type": "concept",
+          "title": "Indicators Kya Hote Hain? (NCERT Book Ke Anusar)",
+          "body": "**Indicator = ek aisi cheez jo colour badal ke bataye ki solution acid hai ya base hai.**\n\n**Natural Indicators:**\n🔵 Litmus — Lichen plant se nikala purple dye\n   • Acid mein → Red ho jaata hai\n   • Base mein → Blue ho jaata hai\n   • Neutral mein → Purple rehta hai\n\n🌿 Haldi (Turmeric)\n   • Acid mein → Yellow rehti hai\n   • Base mein → Reddish-brown ho jaati hai\n   (Yaad hai kabhi kapde pe curry ka daag soap se reddish-brown ho gaya? Wahi science hai!)\n\n**Synthetic (Man-made) Indicators:**\n🧪 Phenolphthalein\n   • Acid mein → Colourless\n   • Base mein → Pink/Red\n\n🧪 Methyl Orange\n   • Acid mein → Red\n   • Base mein → Yellow\n\n**Olfactory Indicators** (Smell se batane wale):\n🧅 Onion — Base mein smell chali jaati hai\n🌸 Vanilla — Base mein smell chali jaati hai\n🌶️ Clove oil — Acid mein smell nahi badlti, Base mein smell badal jaati hai"
+        },
+        {
+          "type": "visual",
+          "visualId": "indicator-colors",
+          "title": "Indicators Ka Colour Chart — Interactive!",
+          "intro": "Har indicator ka acid aur base mein colour dekho. NCERT Table 2.1 ka yeh live version hai!"
+        },
+        {
+          "type": "example",
+          "title": "NCERT Activity 2.1 — Lab Mein Test (Book Se)",
+          "question": "Lab mein HCl, H₂SO₄, NaOH, Ca(OH)₂ jaise solutions leke litmus, phenolphthalein, methyl orange se test karo.",
+          "steps": [
+            {
+              "num": "1",
+              "text": "Watch glass par ek-ek drop daalo — har solution ka"
+            },
+            {
+              "num": "2",
+              "text": "Upar se indicator ki ek drop daalo"
+            },
+            {
+              "num": "3",
+              "text": "Acids (HCl, H₂SO₄, HNO₃, CH₃COOH) — Red litmus nahi badlte, Blue litmus ko Red kar dete hain, Phenolphthalein colourless rehta hai, Methyl orange RED ho jaata hai"
+            },
+            {
+              "num": "4",
+              "text": "Bases (NaOH, KOH, Ca(OH)₂) — Red litmus ko Blue kar dete hain, Phenolphthalein PINK ho jaata hai, Methyl orange YELLOW ho jaata hai"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "NCERT Activity 2.2 — Pyaaz Ka Indicator (Olfactory!)",
+          "question": "Kya pyaaz ek acid-base indicator ban sakta hai? Book ke anusar experiment karo.",
+          "steps": [
+            {
+              "num": "1",
+              "text": "Kati hui pyaaz ko kapde ke strips ke saath plastic bag mein raat bhar fridge mein rakho"
+            },
+            {
+              "num": "2",
+              "text": "Subah strips ko nikalo — unki smell check karo (pyaaz ki smell ayegi)"
+            },
+            {
+              "num": "3",
+              "text": "Ek strip par dilute HCl daalo — smell check karo (smell aati rehti hai — acid mein pyaaz ka odour nahi jaata)"
+            },
+            {
+              "num": "4",
+              "text": "Doosri strip par dilute NaOH daalo — smell check karo (smell chali jaati hai! — base mein pyaaz olfactory indicator hai!)"
+            },
+            {
+              "num": "5",
+              "text": "Similarly vanilla essence aur clove oil test karo — Vanilla aur Onion base mein smell kho dete hain → Yeh olfactory indicators hain! Clove base mein smell kho deta hai."
+            }
+          ]
+        },
+        {
+          "type": "remember",
+          "title": "Indicators — Yaad Rakho! 🧠",
+          "points": [
+            "Litmus: Acid → Red, Base → Blue (Sabse important indicator!)",
+            "Phenolphthalein: Acid → Colourless, Base → Pink",
+            "Methyl Orange: Acid → Red, Base → Yellow",
+            "Haldi: Base mein reddish-brown ho jaati hai",
+            "Olfactory indicators: Smell se batate hain (Onion, Vanilla — Base mein smell khatam)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "name": "Acids & Bases Ki Chemical Properties",
+      "desc": "Metals, carbonates, oxides ke saath reactions",
+      "icon": "⚗️",
+      "xp": 35,
+      "difficulty": "medium",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Zinc Ka Attitude Problem! 🔩",
+          "body": "Soch lo — Zinc ek stubborn dhatu (metal) hai.\n\nAagar usse Acid mein daalo — woh react karta hai aur gas nikalta hai!\nAgar usse Base (NaOH) mein daalo — woh wahan bhi react karta hai aur gas nikalta hai!\n\nYeh gas kaun si hai? Teacher test karta hai — soap ke bubble mein gas bharke candle lagate hain — BOOM! Pop sound aati hai!\n\n🔥 Woh gas hai HYDROGEN (H₂)!\n\nYeh chapter ka pehla bada rule hai:\n**Acid + Metal → Salt + Hydrogen Gas**\n\nChalo ab sab reactions ek-ek karke samjhte hain!"
+        },
+        {
+          "type": "concept",
+          "title": "Rule 1: Acid + Metal → Salt + H₂ ↑",
+          "body": "**NCERT Activity 2.3 — Zinc + H₂SO₄**\n\nZinc granules + Dilute H₂SO₄ → Bubbles bante hain!\nGas ko soap solution se pass karte hain → Bubbles bante hain\nCandle lagate hain bubble ke paas → 'Pop' sound aati hai = Hydrogen gas confirm! ✅\n\n**Reactions:**\nZn + H₂SO₄ → ZnSO₄ + H₂ ↑\nZn + 2HCl → ZnCl₂ + H₂ ↑\nMg + 2HCl → MgCl₂ + H₂ ↑\nFe + H₂SO₄ → FeSO₄ + H₂ ↑\n\n**General Formula:**\nAcid + Metal → Salt + Hydrogen gas\n\n⚠️ Dhyan do: Sabhi metals acid ke saath react nahi karte. Gold, silver react nahi karte!\n\n**NCERT Activity 2.4 — Zinc + NaOH (Base)**\nZinc + NaOH se bhi hydrogen gas banti hai!\n2NaOH(aq) + Zn(s) → Na₂ZnO₂(s) + H₂(g)\n(Sodium Zincate banta hai)\n\nNote: Yeh reaction sabhi metals ke saath possible nahi hai."
+        },
+        {
+          "type": "visual",
+          "visualId": "fig-2-1-zinc-acid",
+          "title": "Fig 2.1 — Zinc + H₂SO₄ Apparatus (Hydrogen Gas Test)",
+          "intro": "NCERT Figure 2.1 — Zinc granules aur dilute sulphuric acid ki reaction aur hydrogen gas test ka poora apparatus. Exam mein yeh diagram banana aa sakta hai!"
+        },
+        {
+          "type": "concept",
+          "title": "Rule 2: Acid + Metal Carbonate/Bicarbonate → CO₂ ↑",
+          "body": "**NCERT Activity 2.5:**\n\nTest tube A mein Na₂CO₃ (Sodium Carbonate)\nTest tube B mein NaHCO₃ (Sodium Bicarbonate)\nDono mein dilute HCl daalo → Bubbles! Effervescence!\n\nGas ko lime water se pass karo → Milky ho jaata hai!\n→ CO₂ gas confirm! (CO₂ + lime water → white precipitate CaCO₃)\n\n**Reactions:**\nNa₂CO₃(s) + 2HCl(aq) → 2NaCl(aq) + H₂O(l) + CO₂(g)\nNaHCO₃(s) + HCl(aq) → NaCl(aq) + H₂O(l) + CO₂(g)\n\nCO₂ + Ca(OH)₂ → CaCO₃(s) + H₂O  ← Lime water milky hota hai\nIf excess CO₂: CaCO₃ + H₂O + CO₂ → Ca(HCO₃)₂ (soluble — milkiness khatam!)\n\n**General Formula:**\nMetal Carbonate + Acid → Salt + CO₂ + Water\nMetal Hydrogencarbonate + Acid → Salt + CO₂ + Water\n\n💡 Yaad rakho: Limestone, chalk, marble — sab CaCO₃ ke forms hain!"
+        },
+        {
+          "type": "visual",
+          "visualId": "fig-2-2-co2-limewater",
+          "title": "Fig 2.2 — CO₂ Gas Passing Through Lime Water",
+          "intro": "NCERT Figure 2.2 — Sodium carbonate + HCl se CO₂ gas banti hai aur lime water milky ho jaata hai. Yeh apparatus diagram exam mein important hai!"
+        },
+        {
+          "type": "concept",
+          "title": "Rule 3: Acid + Base → Salt + Water (Neutralisation!)",
+          "body": "**NCERT Activity 2.6:**\n\nTest tube mein NaOH solution lo → Phenolphthalein daalo → Pink ho jaata hai (Base hai)\nAb dilute HCl drop by drop daalo → Pink colour jata rehta hai!\nJab poora acid add ho jaaye → Colourless ho jaata hai!\n\n🤔 Kyun? Kyunki acid ne base ko neutralize kar diya!\n\n**Reaction:**\nNaOH(aq) + HCl(aq) → NaCl(aq) + H₂O(l)\n\n**Neutralisation Reaction ki Definition:**\nJab acid aur base milke salt aur paani banate hain, isse neutralisation reaction kehte hain.\n\n**General Formula:**\nBase + Acid → Salt + Water\nH⁺(aq) + OH⁻(aq) → H₂O(l)\n\n🔄 Ab NaOH ki thodi drops phir dalo — Pink colour wapas aa jaata hai! Kyunki ab base phir se zyada ho gayi!"
+        },
+        {
+          "type": "concept",
+          "title": "Rule 4: Metal Oxide + Acid → Salt + Water",
+          "body": "**NCERT Activity 2.7:**\n\nBeaker mein thoda copper oxide (CuO) lo\nDilute HCl dheere-dheere daalo (stirring karte raho)\n\nObservation: Solution ka colour BLUE-GREEN ho jaata hai!\n→ Copper(II) Chloride bana! (CuCl₂)\nCuO → dissolve ho gaya!\n\n**Reaction:**\nCuO(s) + 2HCl(aq) → CuCl₂(aq) + H₂O(l)\n\n**General Formula:**\nMetal Oxide + Acid → Salt + Water\n\n💡 Metal oxides basic nature ke hote hain → isliye 'basic oxides' kehte hain\n\n**Rule 5: Non-Metal Oxide + Base → Salt + Water**\nCO₂ (non-metal oxide) + Ca(OH)₂ (base) → CaCO₃ + H₂O\n(Activity 2.5 mein yeh already dekha!)\n\n💡 Non-metallic oxides acidic nature ke hote hain → isliye 'acidic oxides' kehte hain"
+        },
+        {
+          "type": "visual",
+          "visualId": "acid-reactions-summary",
+          "title": "Acid Ke Saath Saari Reactions — Summary Visual",
+          "intro": "Acid kisse kya react karta hai — ek nazar mein dekho!"
+        },
+        {
+          "type": "practice",
+          "title": "NCERT Questions Practice Karo",
+          "questions": [
+            {
+              "question": "Brass aur copper ke bartan mein curd aur khatta khaana kyun nahi rakhna chahiye?",
+              "answer": "Curd/khatte khaane mein acid hota hai. Yeh acid brass (zinc+copper) aur copper se react karke harmful compounds banata hai jo khaane ko kharab kar dete hain aur health ke liye dangerous hain. Reaction: Acid + Metal → Salt + H₂ gas."
+            },
+            {
+              "question": "Acid + Metal se kaun si gas nikalti hai? Example aur test batao.",
+              "answer": "Hydrogen gas (H₂) nikalti hai. Example: Zn + H₂SO₄ → ZnSO₄ + H₂↑. Test: Gas ko soap bubble mein bharke jalte candle ke paas le jaao — 'Pop' sound aayegi (burning hydrogen gas)."
+            },
+            {
+              "question": "Metal compound A + dilute HCl → gas jo candle bujhaye + compound formed = CaCl₂. Balanced equation likho.",
+              "answer": "Gas candle bujhaaye = CO₂. A = CaCO₃ (calcium carbonate). CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g). CO₂ hi candle bujhaata hai."
+            }
+          ]
+        },
+        {
+          "type": "remember",
+          "title": "5 Rules — Yaad Karo! 🏆",
+          "points": [
+            "Acid + Metal → Salt + H₂↑ (gas burns with pop sound)",
+            "Metal Carbonate + Acid → Salt + CO₂↑ + H₂O (CO₂ turns lime water milky)",
+            "Metal Hydrogencarbonate + Acid → Salt + CO₂↑ + H₂O",
+            "Acid + Base → Salt + H₂O (Neutralisation reaction)",
+            "Metal Oxide + Acid → Salt + H₂O | Non-Metal Oxide + Base → Salt + H₂O"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "name": "Acids & Bases Mein Kya Common Hai?",
+      "desc": "H⁺ aur OH⁻ ions — saari properties ka raaz!",
+      "icon": "💧",
+      "xp": 30,
+      "difficulty": "medium",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Bulb Glow Kiya — Raaz Khula! 💡",
+          "body": "NCERT Activity 2.8:\n\nTeacher ne ek beaker mein HCl solution liya. Usme do nails (electrodes) daale — ek battery, ek bulb se connected.\n\nSwitch on kiya — BULB JALA! 💡\n\nPhir glucose solution liya — Switch on kiya — Bulb NAHI jala! ❌\nAlcohol solution liya — Bulb NAHI jala! ❌\n\n🤔 Sawaal: Glucose aur alcohol mein bhi hydrogen hota hai. Phir yeh acidic kyun nahi?\n\n💡 Jawab: Bulb tabhi jalta hai jab ions (charged particles) solution mein hon!\n\nHCl → H⁺(aq) + Cl⁻(aq) ions banata hai — current flow — bulb jala!\nGlucose aur alcohol mein ions nahi bante — current nahi — bulb nahi jala!\n\n🔑 KEY DISCOVERY:\nAcids → Paani mein H⁺ (aq) ions dete hain\nBases → Paani mein OH⁻ (aq) ions dete hain"
+        },
+        {
+          "type": "visual",
+          "visualId": "fig-2-3-bulb-circuit",
+          "title": "Fig 2.3 — Acid Solution Mein Bulb Circuit (Conductivity Test)",
+          "intro": "NCERT Figure 2.3 — Acid solution current conduct karta hai → bulb jalta hai! Glucose/alcohol nahi karta. Yeh circuit diagram exam mein poochha jaata hai."
+        },
+        {
+          "type": "concept",
+          "title": "H⁺ Ka Raaz — Paani Zaroori Hai! (Activity 2.9)",
+          "body": "**NCERT Activity 2.9 — Dry HCl vs HCl Solution:**\n\nNaCl (solid) + concentrated H₂SO₄ → HCl gas banta hai (delivery tube se)\nDry blue litmus paper → colour nahi badlta ❌\nWet (gila) blue litmus paper → Red ho jaata hai ✅\n\n💡 Matlab: Dry HCl gas acidic behaviour nahi karta!\nSirf PAANI mein dissolve hone par H⁺ ions bante hain!\n\n**Reaction:**\nHCl + H₂O → H₃O⁺ + Cl⁻\n\nH⁺ alone exist nahi kar sakta → Paani se milke H₃O⁺ (Hydronium ion) banta hai!\nH⁺ + H₂O → H₃O⁺\n\n**Acids H⁺(aq) ya H₃O⁺ dete hain paani mein**\n\n**Bases ka scene:**\nNaOH(s) → H₂O → Na⁺(aq) + OH⁻(aq)\nKOH(s) → H₂O → K⁺(aq) + OH⁻(aq)\nMg(OH)₂(s) → H₂O → Mg²⁺(aq) + 2OH⁻(aq)\n\n**Bases OH⁻ (hydroxide) ions dete hain paani mein**\n\n💡 Jab base paani mein ghul jaaye → Alkali kehte hain"
+        },
+        {
+          "type": "visual",
+          "visualId": "fig-2-4-hcl-gas",
+          "title": "Fig 2.4 — HCl Gas Preparation (NaCl + H₂SO₄)",
+          "intro": "NCERT Figure 2.4 — Solid NaCl + concentrated H₂SO₄ se HCl gas banane ka apparatus. Dry vs wet litmus test bhi dikhaya gaya hai."
+        },
+        {
+          "type": "concept",
+          "title": "Dilution — Concentration Kam Hoti Hai (Activity 2.10)",
+          "body": "**NCERT Activity 2.10 — Acid + Paani:**\n\n10 mL paani beaker mein lo\nConcentrated H₂SO₄ ki kuch drops dheere-dheere daalo, swirl karo\nBeaker ka bottom touch karo → GARMA! 🔥\n\nYeh EXOTHERMIC process hai! Heat release hoti hai!\n\n⚠️ SAFETY RULE (NCERT):\n'Always add acid to water, NEVER water to acid!'\n→ Paani mein acid daalo — dheere-dheere stirring ke saath\n→ Acid mein paani daao — heat se mixture SPLASH kar sakta hai aur BURN ho sakta hai!\n→ Glass container bhi toot sakta hai excessive local heating se!\n\n**Dilution ka Effect:**\nAcid ya Base ko paani mein dilute karne se H₃O⁺/OH⁻ ions ki concentration PER UNIT VOLUME kam ho jaati hai.\nIsse acid/base 'diluted' ho jaata hai.\n\n**Neutralisation — Ion Level Par:**\nAcid + Base → Salt + Water\nH⁺(aq) + OH⁻(aq) → H₂O(l)"
+        },
+        {
+          "type": "visual",
+          "visualId": "fig-2-5-warning",
+          "title": "Fig 2.5 — Warning Sign on Concentrated Acid/Base Containers",
+          "intro": "NCERT Figure 2.5 — Concentrated acids aur bases ke containers par yeh warning sign hota hai. Safety rule yaad rakho: Acid ko paani mein daalo, paani ko acid mein nahi!"
+        },
+        {
+          "type": "practice",
+          "title": "Concept Clear Karo",
+          "questions": [
+            {
+              "question": "HCl, HNO₃ aqueous solution mein acidic kyun hain jabki glucose nahi?",
+              "answer": "HCl aur HNO₃ paani mein dissolve hone par H⁺(aq) ions dete hain → acidic. Glucose paani mein dissolve hota hai lekin H⁺ ions nahi deta → current flow nahi → acidic nahi."
+            },
+            {
+              "question": "Acid ka aqueous solution current kyun conduct karta hai?",
+              "answer": "Acid paani mein H⁺ (aq) ions deta hai. Yeh ions charged hote hain → electric current carry karte hain → current flow hota hai."
+            },
+            {
+              "question": "Dry HCl gas litmus ka colour kyun nahi badlta?",
+              "answer": "H⁺ ions sirf paani ki presence mein bante hain (HCl + H₂O → H₃O⁺ + Cl⁻). Dry HCl mein paani nahi → H⁺ ions nahi → acidic behaviour nahi → litmus colour nahi badlta."
+            },
+            {
+              "question": "Acid dilute karte waqt acid ko paani mein kyun daala jaata hai?",
+              "answer": "Acid + Paani = highly exothermic reaction hai. Agar paani ko acid mein daalen, concentrated acid mein heat ek hi jagah bahut zyada generate hogi → splash, burn, glass break. Isliye hamesha acid ko paani mein daalo — paani zyada hone se heat distribute ho jaati hai."
+            }
+          ]
+        },
+        {
+          "type": "remember",
+          "title": "Ions Ki Duniya — Core Points 🧠",
+          "points": [
+            "Acids → H⁺(aq) ya H₃O⁺ ions dete hain paani mein",
+            "Bases → OH⁻(aq) ions dete hain paani mein",
+            "H⁺ alone exist nahi karta → H₂O ke saath H₃O⁺ banta hai",
+            "Dry HCl → acidic nahi (paani chahiye ions ke liye!)",
+            "Dilution = ions ki concentration per unit volume kam hoti hai",
+            "Acid-to-water add karo, kabhi Water-to-acid nahi! (Safety Rule)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "name": "pH Scale — Kitna Strong Hai?",
+      "desc": "0 se 14 tak — acidic, neutral, basic ki map",
+      "icon": "📊",
+      "xp": 30,
+      "difficulty": "medium",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Doctor Ne Poochha — Pet Ki Acid Kitni Strong Hai? 🏥",
+          "body": "Soch lo doctor ke paas ek patient aaya — usse bahut acidity ho rahi thi.\n\nDoctor ne socha: 'Acid hai toh hai — lekin KITNI strong hai? Thodi hai ya bahut zyada?'\n\nAgar sirf 'acidic hai' bolte — toh dawa kitni deni hai, pata nahi chalega!\n\nIsliye scientists ne ek SCALE banaya — pH Scale.\n\n'p' ka matlab German mein 'Potenz' = Power\n'H' = Hydrogen ion concentration\n\nSimple rule:\n• pH 0-6 → ACID (jitna kam pH, utna zyada acid!) 🔴\n• pH 7 → NEUTRAL (distilled water) ⚪\n• pH 8-14 → BASE (jitna zyada pH, utna zyada basic!) 🔵\n\nYaad rakho: Stomach ka acid → pH ≈ 1.2 (bahut strong!)\nNimbu → pH ≈ 2.2\nPure water → pH = 7\nBleach → pH ≈ 13"
+        },
+        {
+          "type": "concept",
+          "title": "pH Scale — Universal Indicator Aur Scale Ka Detail",
+          "body": "**pH Scale kya hota hai?**\nH⁺ ion concentration measure karne ka ek scale → 0 se 14 tak\nHigher H⁺ concentration → Lower pH value\nLower H⁺ concentration → Higher pH value\n\n**Universal Indicator:**\nKaafi indicators ka mixture → har pH level par ALAG colour deta hai\nIsse measure karte hain → pH paper (paper par universal indicator laga hota hai)\n\n**pH Scale Colours (approx NCERT Fig 2.7):**\n0-1 → Dark Red (very acidic)\n2-3 → Orange-Red\n4-5 → Orange-Yellow\n6 → Yellow\n7 → Green (Neutral!)\n8-9 → Cyan-Blue\n10-11 → Blue\n12-14 → Dark Blue/Violet (very basic)\n\n**NCERT Ke Kuch Common Substances ke pH:**\nGastric juice → 1.2\nNimbu (Lemon) → 2.2\nSira (Vinegar) → 2.4-3\nSoda water → 3-4\nCoffee → 4-5\nSaaf paani (Pure water) → 7\nBlood → 7.4\nMilk of Magnesia → 10\nNaOH solution → 14\n\n**Strong vs Weak Acids/Bases:**\nStrong acid = zyada H⁺ ions deta hai → pH bahut kam\nWeak acid = kam H⁺ ions deta hai → pH thoda kam\nSame concentration mein HCl (strong) vs CH₃COOH (weak) → HCl ka pH zyada kam hoga"
+        },
+        {
+          "type": "visual",
+          "visualId": "fig-2-6-ph-variation",
+          "title": "Fig 2.6 — pH Variation with H⁺ and OH⁻ Concentration",
+          "intro": "NCERT Figure 2.6 — Jaise H⁺ badhta hai pH ghatta hai, jaise OH⁻ badhta hai pH badhta hai. Yeh diagram pH ka concept clearly dikhata hai."
+        },
+        {
+          "type": "visual",
+          "visualId": "ph-scale",
+          "title": "pH Scale — Interactive! Substances Dekho",
+          "intro": "pH 0 se 14 tak ka colorful scale. Common substances kahan hain — click karke dekho!"
+        },
+        {
+          "type": "concept",
+          "title": "Rozmarraha Mein pH Ka Mahatv (NCERT 2.3.1)",
+          "body": "**1. Plants aur Animals pH Sensitive Hain:**\nHamara body pH range 7.0 se 7.8 mein kaam karta hai.\nZyada change → problems!\n\nAcid Rain: Jab baarish ke paani ka pH 5.6 se kam ho → 'Acid Rain'\nAcid rain rivers mein jaaye → river ka pH kam ho → aquatic life survive nahi kar sakti!\n\n**2. Plants ke liye Soil pH:**\nHar plant ko specific pH chahiye healthy growth ke liye.\nKisaan soil test karte hain (Activity 2.12: soil + paani → filter → pH paper se test)\nIf soil zyada acidic → quicklime/slaked lime/chalk (CaO, Ca(OH)₂, CaCO₃) daalte hain — yeh basic hain → soil ka pH badhata hai!\n\n**3. Hamare Paachan Tantra Mein pH:**\nHamara stomach HCl banata hai (pH ≈ 1-2)\nYeh food digest karne mein help karta hai WITHOUT stomach ko nuqsan pahunchaaye\nLekin INDIGESTION → stomach ZYADA acid banata hai → pain, irritation!\nIlaaj: Antacids (bases) → excess acid neutralize karte hain\nMagnesium Hydroxide — Milk of Magnesia → mild base → antacid! 💊\n\n**4. Daant Ka Decay:**\nDaant ki email (enamel) = Calcium Hydroxyapatite\nSabse hard substance in body\nLekin pH 5.5 se kam ho → corrode hone lagta hai!\nBacteria sugar khake acid banate hain → pH girta hai → decay!\nToothpaste (basic) → excess acid neutralize karta hai → decay rokta hai!\n\n**5. Bee Sting aur Nettle:**\nMakhi (bee) ka dank → acid inject karta hai → pain\nIlaaj: Baking soda (mild base) lagao → neutralize!\nNettle leaves ke stinging hair → methanoic acid inject karte hain\nIlaaj: Dock plant ki pattiyan ragdo (nature ki remedy — dock basic hoti hai!)"
+        },
+        {
+          "type": "practice",
+          "title": "pH Questions",
+          "questions": [
+            {
+              "question": "Solution A ka pH=6, Solution B ka pH=8. Kaun zyada H⁺ ions wala hai? Kaun acidic, kaun basic?",
+              "answer": "H⁺ concentration zyada hone par pH kam hota hai. Toh pH=6 wala Solution A mein zyada H⁺ ions hain. Solution A (pH=6) → Acidic. Solution B (pH=8) → Basic."
+            },
+            {
+              "question": "Kisaan apne kheton ki mitti par quicklime (CaO) ya slaked lime ya chalk kab daalta hai?",
+              "answer": "Jab mitti bahut zyada acidic ho jaaye (pH bahut kam). CaO, Ca(OH)₂, CaCO₃ sab basic hain → yeh mitti ka pH badhate hain → mitti neutral ya slightly basic ho jaati hai → plants achhe se ugte hain."
+            },
+            {
+              "question": "Fresh milk ka pH 6 hai. Jab woh curd banta hai, pH badhega ya ghategaa? Kyun?",
+              "answer": "pH ghategaa (yaani aur acidic ho jaayega). Curd bante waqt bacteria sugar (lactose) ko lactic acid mein convert karte hain. Zyada acid ban jaati hai → H⁺ concentration badhti hai → pH aur kam ho jaata hai."
+            }
+          ]
+        },
+        {
+          "type": "remember",
+          "title": "pH Scale — Key Points 📊",
+          "points": [
+            "pH 0-6 = Acidic, pH 7 = Neutral, pH 8-14 = Basic/Alkaline",
+            "High H⁺ concentration = Low pH (inverse relation!)",
+            "Body ka optimal pH range = 7.0 to 7.8",
+            "Acid Rain: pH < 5.6 (harmful for aquatic life)",
+            "Tooth decay starts at pH < 5.5 (bacteria se acid banta hai)",
+            "Antacids (basic) stomach ke excess acid ko neutralize karte hain",
+            "Bee sting → acid → baking soda (base) se relief milti hai"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "name": "Salts — Families, pH aur Common Salt",
+      "desc": "Salt kya hai, uski family, aur NaCl se kya-kya banta hai",
+      "icon": "🧂",
+      "xp": 35,
+      "difficulty": "medium",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Namak — Jitna Simple Lagta Hai, Utna Nahi! 🧂",
+          "body": "Ghar mein jo namak (NaCl) use karte ho — woh ek salt hai.\nLekin SIRF woh hi salt nahi hota!\n\nScience mein: Acid + Base reaction se jo compound banta hai — woh SALT hai!\n\nKuch examples:\nHCl + NaOH → NaCl + H₂O (yeh wala namak khate ho!)\nH₂SO₄ + NaOH → Na₂SO₄ + H₂O (sodium sulphate — salt!)\nHCl + KOH → KCl + H₂O (potassium chloride — salt!)\nHNO₃ + NaOH → NaNO₃ + H₂O (sodium nitrate — salt!)\n\nDekho — kitni variety hai!\n\nOr ek interesting baat:\nKisi salt ki FAMILY hoti hai — same positive ya negative radical wale salts ek family ke hote hain!\n\nNaCl aur KCl → Chloride family 🤝\nNaCl aur Na₂SO₄ → Sodium family 🤝"
+        },
+        {
+          "type": "concept",
+          "title": "Salt Ki Families (NCERT Activity 2.13)",
+          "body": "**Salt kya hai?**\nAcid + Base → Salt + Water (neutralisation se banta hai)\n\n**Important Salts aur Unke Parents:**\n\n| Salt | Acid | Base |\n|------|----- |------|\n| NaCl | HCl | NaOH |\n| Na₂SO₄ | H₂SO₄ | NaOH |\n| NH₄Cl | HCl | NH₄OH |\n| CaCl₂ | HCl | Ca(OH)₂ |\n| ZnSO₄ | H₂SO₄ | Zn(OH)₂ |\n| KNO₃ | HNO₃ | KOH |\n| Na₂CO₃ | H₂CO₃ | NaOH |\n\n**NCERT Activity 2.13 — Families Pehchano:**\nPotassium sulphate, sodium sulphate, calcium sulphate, magnesium sulphate, copper sulphate\n→ Yeh sab SULPHATE family ke hain! (common anion = SO₄²⁻)\n\nSodium chloride, sodium nitrate, sodium carbonate, sodium sulphate\n→ Yeh sab SODIUM family ke hain! (common cation = Na⁺)\n\n**Salt Ka pH:**\nStrong Acid + Strong Base → Neutral Salt (pH = 7) — Jaise NaCl\nStrong Acid + Weak Base → Acidic Salt (pH < 7) — Jaise NH₄Cl\nWeak Acid + Strong Base → Basic Salt (pH > 7) — Jaise Na₂CO₃, NaHCO₃"
+        },
+        {
+          "type": "concept",
+          "title": "Common Salt Se Kya-Kya Banta Hai! 🏭",
+          "body": "**NaCl (Common Salt) — Ek Raw Material:**\nSamudra (sea water) se ya rock salt se milta hai\n(Rock salt = purane zamaane ke sukhe samudron ke namak ke beds → mine ki tarah nikaalte hain)\n\n**1. Sodium Hydroxide (NaOH) — Chlor-Alkali Process:**\nBrine (NaCl ka aqueous solution) mein se electricity pass karo!\n\n2NaCl(aq) + 2H₂O(l) → 2NaOH(aq) + Cl₂(g) + H₂(g)\n\n• Anode par → Cl₂ gas 🟡\n• Cathode par → H₂ gas 🔵\n• Cathode ke paas → NaOH solution banta hai\n\nTeen useful products ek saath!\nCl₂ uses: Disinfectant, bleaching, PVC, pesticides, CFCs\nH₂ uses: Fuels, margarine, ammonia for fertilisers\nNaOH uses: De-greasing metals, soaps, detergents, paper, artificial fibres\n\n**2. Bleaching Powder — Ca(ClO)₂:**\nDry slaked lime + Cl₂ gas → Bleaching powder!\n2Ca(OH)₂ + 2Cl₂ → Ca(ClO)₂ + CaCl₂ + 2H₂O\n\nUses:\n• Textile industry mein cotton/linen bleach karna\n• Paper factories mein wood pulp bleach karna\n• Laundry mein kapde safed karna\n• Oxidising agent chemical industries mein\n• Drinking water germfree banane ke liye 💧\n\n**3. Baking Soda — NaHCO₃:**\nNaCl + H₂O + CO₂ + NH₃ → NH₄Cl + NaHCO₃\n\nWhen heated: 2NaHCO₃ → Na₂CO₃ + H₂O + CO₂ (gas se bread/cake soft banta hai!)\n\nUses:\n• Baking powder mein (NaHCO₃ + tartaric acid = baking powder)\n• Antacid mein — stomach ka excess acid neutralize\n• Soda-acid fire extinguisher mein\n\n**4. Washing Soda — Na₂CO₃·10H₂O:**\nBaking soda (NaHCO₃) garam karo → Na₂CO₃ banta hai\nNa₂CO₃ ko recrystallize karo + 10 pani ke molecules → Washing Soda!\nNa₂CO₃ + 10H₂O → Na₂CO₃·10H₂O\n\nUses:\n• Glass, soap, paper industries\n• Sodium compounds (borax) banana\n• Ghar mein cleaning agent\n• Paani ki permanent hardness hatana"
+        },
+        {
+          "type": "visual",
+          "visualId": "chlor-alkali-process",
+          "title": "Chlor-Alkali Process — Diagram! (NCERT Fig 2.8)",
+          "intro": "NaCl se NaOH, Cl₂, H₂ kaise banta hai — step by step dekho!"
+        },
+        {
+          "type": "practice",
+          "title": "Salts Practice",
+          "questions": [
+            {
+              "question": "Ca(ClO)₂ ka common naam kya hai?",
+              "answer": "Bleaching Powder. Yeh chlorine gas aur dry slaked lime (Ca(OH)₂) ki reaction se banta hai."
+            },
+            {
+              "question": "Kaunsi substance ko chlorine se treat karne par bleaching powder milta hai?",
+              "answer": "Dry slaked lime — Ca(OH)₂. Reaction: 2Ca(OH)₂ + 2Cl₂ → Ca(ClO)₂ + CaCl₂ + 2H₂O"
+            },
+            {
+              "question": "Paani ki permanent hardness hatane ke liye kaun sa sodium compound use hota hai?",
+              "answer": "Washing Soda — Na₂CO₃·10H₂O (Sodium Carbonate). Yeh hard water ke calcium/magnesium ions ke saath react karke insoluble precipitate banata hai."
+            },
+            {
+              "question": "NaHCO₃ solution ko garam karne par kya hoga? Equation bhi likho.",
+              "answer": "NaHCO₃ decompose hoga: 2NaHCO₃ → Na₂CO₃ + H₂O + CO₂↑. CO₂ gas release hogi aur Na₂CO₃ (sodium carbonate) bachega."
+            }
+          ]
+        },
+        {
+          "type": "visual",
+          "visualId": "fig-2-10-fire-extinguisher",
+          "title": "Fig 2.10 — Soda-Acid Fire Extinguisher",
+          "intro": "NCERT Figure 2.10 — NaHCO₃ + H₂SO₄ reaction se CO₂ gas banti hai jo fire bujhaati hai. Yeh apparatus Group Activity mein hai — exam mein diagram aata hai!"
+        },
+        {
+          "type": "remember",
+          "title": "Salts — Sab Kuch Yaad Karo! 🧂",
+          "points": [
+            "Salt = Acid + Base reaction ka product",
+            "Strong Acid + Strong Base = Neutral salt (pH=7), Jaise NaCl",
+            "Strong Acid + Weak Base = Acidic salt (pH<7), Jaise NH₄Cl",
+            "Weak Acid + Strong Base = Basic salt (pH>7), Jaise Na₂CO₃",
+            "Chlor-Alkali process: Brine → NaOH + Cl₂ + H₂ (teeno useful!)",
+            "Bleaching powder = Ca(OH)₂ + Cl₂",
+            "Baking soda = NaHCO₃, Washing soda = Na₂CO₃·10H₂O"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "name": "Water of Crystallisation aur Plaster of Paris",
+      "desc": "CuSO₄·5H₂O, Gypsum, aur Plaster of Paris ka science",
+      "icon": "💎",
+      "xp": 25,
+      "difficulty": "easy",
+      "steps": [
+        {
+          "type": "story",
+          "title": "Neela CuSO₄ Safed Kyun Ho Gaya? 😮",
+          "body": "NCERT Activity 2.15:\n\nTeacher ne copper sulphate (CuSO₄) ke neele crystals liye aur dry boiling tube mein garam kiya.\n\nKya hua?\n✅ Crystals ka colour NEELE se SAFED ho gaya!\n✅ Boiling tube ki deewar par PAANI ki boondein dikhin!\n\nTeacher ne poochha: 'Yeh paani kahan se aaya? Crystals toh dry the!'\n\nPhir safed powder par 2-3 drops paani dala — NEELA colour WAPAS aa gaya! 😲\n\nRaaz: CuSO₄ ke crystals mein actually 5 paani ke molecules trapped hote hain!\nFormula: CuSO₄·5H₂O\n\nYeh paani hi crystals ko neela colour deta hai!\nGarm karne par paani nikal jaata hai → safed ho jaata hai\nPhir paani dalo → neela wapas!\n\nYeh hoti hai **Water of Crystallisation**!"
+        },
+        {
+          "type": "visual",
+          "visualId": "fig-2-9-cuso4-heating",
+          "title": "Fig 2.9 — CuSO₄ Crystals Ko Garam Karna (Water of Crystallisation)",
+          "intro": "NCERT Figure 2.9 — Blue CuSO₄ crystals garam karne par safed ho jaate hain, paani ki boondein deewar par. Phir paani daalo → neela wapas!"
+        },
+        {
+          "type": "concept",
+          "title": "Water of Crystallisation — Kya Hota Hai?",
+          "body": "**Definition:**\nWater of crystallisation = Ek salt ke ek formula unit mein present fixed number of water molecules\n\nYeh paani crystals ko ek specific structure aur colour deta hai.\n\n**Important Examples:**\n\n💙 Copper Sulphate: CuSO₄·5H₂O\n(Blue vitriol — neela rang, 5 paani ke molecules)\nGarm karo → CuSO₄ (anhydrous — safed, 0 paani molecules)\n\n🔵 Washing Soda: Na₂CO₃·10H₂O\n(10 paani ke molecules — crystal structure banata hai)\n\n🪨 Gypsum: CaSO₄·2H₂O\n(2 paani ke molecules)\n\n**Kya Na₂CO₃·10H₂O 'geela' (wet) hota hai?**\nNahi! 10H₂O ka matlab yeh nahi ki crystal geela ya liquid hai.\nYeh paani molecular level par crystal structure mein bound hota hai.\nCrystal bahar se dry hi lagta hai!"
+        },
+        {
+          "type": "concept",
+          "title": "Plaster of Paris — Hospital Ka Dost! 🏥",
+          "body": "**Gypsum se Plaster of Paris kaise banta hai:**\n\nGypsum: CaSO₄·2H₂O\nInhein 373K (100°C) par garam karo →\nPaani nikalta hai → CaSO₄·½H₂O banta hai\n\nCaSO₄·2H₂O → CaSO₄·½H₂O + 3/2 H₂O\n(Gypsum) → (Plaster of Paris)\n\n**'½ H₂O' kaise hota hai?**\nDo CaSO₄ molecules ek H₂O share karte hain isliye ½ likhte hain!\n\n**Plaster of Paris + Paani = Gypsum wapas!**\nCaSO₄·½H₂O + 1½H₂O → CaSO₄·2H₂O\n(Plaster of Paris) → (Gypsum — hard solid!)\n\nYahi setting process hai — jab doctor fracture mein plaster lagate hain!\n\n**Uses of Plaster of Paris:**\n🦴 Fractured bones ko support dene ke liye (doctor ka plaster)\n🎨 Toys aur decoration materials banana\n🏠 Surfaces smooth banana\n\n**⚠️ Store Karna:**\nPlaster of Paris ko moisture-proof container mein store karo!\nNami lagegi → paani absorb karega → Gypsum ban jaayega → setting ki property khatam!\n\n**Naam 'Paris' kyun?**\nFrance ke Paris city ke paas Montmartre area mein gypsum ka bada deposit hai\nWahan se bade paimane par banta tha → 'Plaster of Paris' naam pada!"
+        },
+        {
+          "type": "practice",
+          "title": "Water of Crystallisation Practice",
+          "questions": [
+            {
+              "question": "Plaster of Paris moisture-proof container mein kyun store karna chahiye?",
+              "answer": "Plaster of Paris (CaSO₄·½H₂O) nami absorb karke Gypsum (CaSO₄·2H₂O) ban jaata hai. Agar iska setting property kho jaaye toh medical aur construction use ke liye kaam nahi karega. Isliye moisture-proof storage zaroori hai."
+            },
+            {
+              "question": "Plaster of Paris aur paani ki reaction ka equation likho.",
+              "answer": "CaSO₄·½H₂O + 1½H₂O → CaSO₄·2H₂O. Plaster of Paris paani absorb karke gypsum banta hai jo ek hard solid mass deta hai — yahi fracture mein support karta hai."
+            },
+            {
+              "question": "CuSO₄·5H₂O ko garam karne par kya hoga?",
+              "answer": "5 paani ke molecules remove ho jaayenge. Neela CuSO₄·5H₂O → Safed anhydrous CuSO₄ ban jaayega. Boiling tube ki deewar par paani ki boondein dikhenge."
+            }
+          ]
+        },
+        {
+          "type": "remember",
+          "title": "Water of Crystallisation aur POP 💎",
+          "points": [
+            "Water of Crystallisation = Salt ke formula unit mein fixed water molecules",
+            "CuSO₄·5H₂O = Blue vitriol (5 paani — neela colour deta hai)",
+            "Na₂CO₃·10H₂O = Washing soda (10 paani)",
+            "CaSO₄·2H₂O = Gypsum (2 paani)",
+            "CaSO₄·½H₂O = Plaster of Paris (gypsum ko 373K par garam karne se)",
+            "POP + Paani → Gypsum (hard solid) — fracture treatment!",
+            "POP ko moisture-proof rakho warna Gypsum ban jaayega!"
+          ]
+        }
+      ]
+    }
+  ],
+  "quizSets": [
+    {
+      "setId": "setA",
+      "name": "Set A — Indicators aur Basic Reactions",
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Litmus paper ka colour acids mein kaisa ho jaata hai?",
+          "options": [
+            "Red",
+            "Blue",
+            "Green",
+            "Yellow"
+          ],
+          "correctIndex": 0,
+          "hint": "Litmus ka kaam hi yeh hai ki rang badal ke bataye...",
+          "explanation": "Acids blue litmus ko red kar dete hain. Bases red litmus ko blue kar dete hain. Yeh sabse basic rule hai!"
+        },
+        {
+          "id": "q2",
+          "question": "Phenolphthalein indicator base mein kaun sa colour deta hai?",
+          "options": [
+            "Pink/Red",
+            "Yellow",
+            "Blue",
+            "Colourless"
+          ],
+          "correctIndex": 0,
+          "hint": "Phenolphthalein acid mein colourless hota hai...",
+          "explanation": "Phenolphthalein base mein Pink/Red ho jaata hai aur acid mein colourless rehta hai. NaOH + phenolphthalein → Pink!"
+        },
+        {
+          "id": "q3",
+          "question": "Acid + Metal reaction mein kaun si gas nikalty hai?",
+          "options": [
+            "Hydrogen (H₂)",
+            "Oxygen (O₂)",
+            "Carbon Dioxide (CO₂)",
+            "Nitrogen (N₂)"
+          ],
+          "correctIndex": 0,
+          "hint": "Yeh gas jalti hai aur 'pop' sound aati hai...",
+          "explanation": "Acid + Metal → Salt + H₂ (Hydrogen gas). Yeh gas 'pop' sound ke saath jalti hai. Example: Zn + H₂SO₄ → ZnSO₄ + H₂↑"
+        },
+        {
+          "id": "q4",
+          "question": "Na₂CO₃ + HCl reaction mein kaun si gas banti hai?",
+          "options": [
+            "CO₂",
+            "H₂",
+            "Cl₂",
+            "SO₂"
+          ],
+          "correctIndex": 0,
+          "hint": "Yeh gas lime water milky karti hai...",
+          "explanation": "Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂↑. CO₂ lime water (Ca(OH)₂) ko milky/white kar deti hai."
+        },
+        {
+          "id": "q5",
+          "question": "Neutralisation reaction kya produce karta hai?",
+          "options": [
+            "Salt + Paani",
+            "Salt + Gas",
+            "Paani + Gas",
+            "Sirf Salt"
+          ],
+          "correctIndex": 0,
+          "hint": "Base + Acid → ?",
+          "explanation": "Base + Acid → Salt + Water. Yeh neutralisation reaction hai. Example: NaOH + HCl → NaCl + H₂O"
+        },
+        {
+          "id": "q6",
+          "question": "pH = 7 ka matlab kya hai?",
+          "options": [
+            "Neutral solution",
+            "Strong acid",
+            "Strong base",
+            "Weak acid"
+          ],
+          "correctIndex": 0,
+          "hint": "pH scale mein beech wali value...",
+          "explanation": "pH 7 = Neutral! Pure distilled water ka pH 7 hota hai. Less than 7 = Acidic, More than 7 = Basic/Alkaline."
+        },
+        {
+          "id": "q7",
+          "question": "Bee sting ke baad kaunsa substance lagaane se relief milti hai?",
+          "options": [
+            "Baking soda (base)",
+            "Nimbu (acid)",
+            "Vinegar (acid)",
+            "Sugar solution"
+          ],
+          "correctIndex": 0,
+          "hint": "Bee sting acid inject karta hai. Kya lagana chahiye?",
+          "explanation": "Bee sting acid inject karta hai jo pain deta hai. Baking soda (mild base) lagane se acid neutralize ho jaata hai aur relief milti hai!"
+        }
+      ]
+    },
+    {
+      "setId": "setB",
+      "name": "Set B — Ions, pH aur Salts",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "HCl + H₂O → ? Kaunsa ion banta hai?",
+          "options": [
+            "H₃O⁺ + Cl⁻",
+            "H₂ + Cl⁻",
+            "HCl⁺ + OH⁻",
+            "Na⁺ + Cl⁻"
+          ],
+          "correctIndex": 0,
+          "hint": "Acid paani mein dissolve hone par H⁺ deta hai jo H₂O se milta hai...",
+          "explanation": "HCl + H₂O → H₃O⁺ + Cl⁻. H⁺ alone exist nahi karta — paani ke saath milke H₃O⁺ (Hydronium ion) banta hai!"
+        },
+        {
+          "id": "q2",
+          "question": "Dry HCl gas dry litmus paper ka colour kyun nahi badlta?",
+          "options": [
+            "Paani nahi hai, toh H⁺ ions nahi bante",
+            "HCl acid nahi hai",
+            "Dry litmus kaam nahi karta",
+            "HCl ka pH 7 hai"
+          ],
+          "correctIndex": 0,
+          "hint": "Ions banne ke liye kya zaroori hai?",
+          "explanation": "H⁺ ions sirf paani ki presence mein bante hain. Dry HCl mein paani nahi → H⁺ ions nahi → acidic behaviour nahi → litmus colour nahi badlta."
+        },
+        {
+          "id": "q3",
+          "question": "Strong Acid + Weak Base se banna wala salt ka pH kaisa hoga?",
+          "options": [
+            "Less than 7 (acidic)",
+            "Equal to 7 (neutral)",
+            "More than 7 (basic)",
+            "It depends only on concentration"
+          ],
+          "correctIndex": 0,
+          "hint": "NH₄Cl jaisa salt — ammonium (weak base) + HCl (strong acid)...",
+          "explanation": "Strong Acid + Weak Base = Acidic Salt (pH < 7). Example: NH₄Cl ka pH 7 se kam hota hai. Strong Acid + Strong Base = Neutral salt."
+        },
+        {
+          "id": "q4",
+          "question": "Chlor-Alkali process mein cathode par kaun si gas nikalty hai?",
+          "options": [
+            "Hydrogen (H₂)",
+            "Chlorine (Cl₂)",
+            "Oxygen (O₂)",
+            "NaOH"
+          ],
+          "correctIndex": 0,
+          "hint": "Anode par Cl₂, cathode par...?",
+          "explanation": "Chlor-Alkali: 2NaCl + 2H₂O → 2NaOH + Cl₂ + H₂. Cathode par H₂ gas nikalti hai, Anode par Cl₂ gas nikalti hai, Cathode ke paas NaOH solution banta hai."
+        },
+        {
+          "id": "q5",
+          "question": "Bleaching powder kis reaction se banta hai?",
+          "options": [
+            "Ca(OH)₂ + Cl₂",
+            "NaCl + Cl₂",
+            "CaCO₃ + Cl₂",
+            "NaOH + Cl₂"
+          ],
+          "correctIndex": 0,
+          "hint": "Dry slaked lime aur chlorine gas...",
+          "explanation": "2Ca(OH)₂ + 2Cl₂ → Ca(ClO)₂ + CaCl₂ + 2H₂O. Dry slaked lime (Ca(OH)₂) par chlorine gas act karta hai → bleaching powder banta hai."
+        },
+        {
+          "id": "q6",
+          "question": "CuSO₄·5H₂O ko garam karne par kya hoga?",
+          "options": [
+            "Safed ho jaayega, paani nikal jaayega",
+            "Neela ho jaayega",
+            "Kuch nahi hoga",
+            "CO₂ gas niklegi"
+          ],
+          "correctIndex": 0,
+          "hint": "Water of crystallisation remove hogi...",
+          "explanation": "CuSO₄·5H₂O mein 5 paani ke molecules hain jo crystal ko neela banate hain. Garm karne par yeh paani nikal jaata hai → anhydrous CuSO₄ (safed powder) bachta hai."
+        },
+        {
+          "id": "q7",
+          "question": "Plaster of Paris kaun si compound hai?",
+          "options": [
+            "CaSO₄·½H₂O",
+            "CaSO₄·2H₂O",
+            "CaCO₃",
+            "Ca(OH)₂"
+          ],
+          "correctIndex": 0,
+          "hint": "Gypsum ko 373K par garam karne par...",
+          "explanation": "CaSO₄·2H₂O (Gypsum) ko 373K par garam karo → CaSO₄·½H₂O (Plaster of Paris) banta hai. POP + H₂O → Gypsum (hard solid) — fracture treatment!"
+        }
+      ]
+    },
+    {
+      "setId": "setC",
+      "name": "Set C — Board Level Questions",
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "10 mL NaOH solution ko 8 mL HCl se neutralize kiya. Agar 20 mL NaOH lein toh kitna HCl lagega?",
+          "options": [
+            "16 mL",
+            "8 mL",
+            "12 mL",
+            "4 mL"
+          ],
+          "correctIndex": 0,
+          "hint": "NaOH double ho gayi — toh HCl bhi double hogi!",
+          "explanation": "10 mL NaOH = 8 mL HCl. 20 mL NaOH = 20 mL NaOH × (8/10) = 16 mL HCl. Direct proportion: NaOH double = HCl double."
+        },
+        {
+          "id": "q2",
+          "question": "Indigestion treat karne mein kaunsi type ki medicine use hoti hai?",
+          "options": [
+            "Antacid (base)",
+            "Antibiotic",
+            "Analgesic",
+            "Antiseptic"
+          ],
+          "correctIndex": 0,
+          "hint": "Indigestion mein stomach mein extra acid hoti hai...",
+          "explanation": "Indigestion mein stomach extra HCl banata hai. Antacids (mild bases like Mg(OH)₂) is excess acid ko neutralize karte hain. Anti-acid = Antacid!"
+        },
+        {
+          "id": "q3",
+          "question": "Distilled paani current conduct nahi karta, baarish ka paani karta hai — kyun?",
+          "options": [
+            "Baarish mein CO₂ dissolve hoke H₂CO₃ (acid) banaata hai — ions hote hain",
+            "Baarish ka paani garam hota hai",
+            "Distilled paani thick hota hai",
+            "Baarish ka paani alkaline hota hai"
+          ],
+          "correctIndex": 0,
+          "hint": "Current conduct karne ke liye kya chahiye?",
+          "explanation": "Current conduct karne ke liye IONS chahiye. Distilled paani pure hai — koi ions nahi — no current. Baarish ka paani atmosphere se CO₂ + SO₂ + NO₂ absorb karta hai → acids bante hain → ions bante hain → current conduct karta hai!"
+        },
+        {
+          "id": "q4",
+          "question": "Dilute H₂SO₄ + Zinc granules → kaun si gas banti hai aur usse kaise test karein?",
+          "options": [
+            "H₂ gas — jalte candle ke paas le jaao, 'pop' sound aayegi",
+            "CO₂ gas — lime water milky karega",
+            "O₂ gas — burning splint tej jalegi",
+            "Cl₂ gas — yellow colour aur pungent smell"
+          ],
+          "correctIndex": 0,
+          "hint": "Acid + Metal reaction mein...",
+          "explanation": "Zn + H₂SO₄ → ZnSO₄ + H₂↑. Gas ko soap solution mein pass karo → bubbles bante hain → burning candle laao → 'Pop' sound aati hai = Hydrogen confirmed! Alternatively, gas bhari tube ko inverting karke candle ke paas laao."
+        },
+        {
+          "id": "q5",
+          "question": "Milkman fresh milk mein thoda baking soda kyun milaata hai?",
+          "options": [
+            "pH slightly alkaline karne ke liye taaki curd jaldi na bane",
+            "Doodh safed banane ke liye",
+            "Doodh garam karne ke liye",
+            "Doodh mein CO₂ milane ke liye"
+          ],
+          "correctIndex": 0,
+          "hint": "Curd kab banta hai? Jab milk mein acid bane. Toh baking soda (base) kya karega?",
+          "explanation": "Fresh milk ka pH ≈ 6. Bacteria lactic acid banate hain → pH girta hai → curd banta hai. Baking soda (NaHCO₃ = mild base) milane se pH slightly alkaline ho jaata hai → bacteria ke acid ko neutralize karta rehta hai → curd banana slow ho jaata hai → milk zyada der fresh rehta hai!"
+        },
+        {
+          "id": "q6",
+          "question": "Five solutions A, B, C, D, E ka pH hai 4, 1, 11, 7, 9. Strongly acidic, neutral, weakly acidic kaun?",
+          "options": [
+            "Strongly acidic=B(1), Neutral=D(7), Weakly acidic=A(4)",
+            "Strongly acidic=A(4), Neutral=D(7), Weakly acidic=B(1)",
+            "Strongly acidic=C(11), Neutral=E(9), Weakly acidic=D(7)",
+            "Strongly acidic=E(9), Neutral=D(7), Weakly acidic=C(11)"
+          ],
+          "correctIndex": 0,
+          "hint": "Kam pH = zyada acidic. pH 7 = neutral.",
+          "explanation": "Strongly acidic = B (pH=1, sabse kam!). Neutral = D (pH=7). Weakly acidic = A (pH=4, acidic hai lekin strong nahi). C (pH=11) = strongly alkaline. E (pH=9) = weakly alkaline. H⁺ increasing order: C < E < D < A < B."
+        }
+      ]
+    }
+  ]
+}

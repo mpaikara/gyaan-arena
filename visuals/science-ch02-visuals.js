@@ -302,7 +302,7 @@ Object.assign(VISUAL_TEMPLATES, {
   <div class="insight-h">🏭 Chlor-Alkali Ka Naam Kyun?</div>
   <strong>Chlor</strong> = Chlorine (Cl₂) &nbsp;|&nbsp; <strong>Alkali</strong> = NaOH (ek strong base/alkali hai!)<br>
   Teen products — teeno kaafi useful! NaCl ek akela substance kitna kaam ka hai! 🧂
-</div>`
+</div>`,
 
 // ── Fig 2.1 — Zinc + H₂SO₄ Apparatus ──
 'fig-2-1-zinc-acid': (s) => `
